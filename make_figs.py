@@ -29,9 +29,9 @@ C = {"Periodic": "#1f77b4", "Change": "#d62728", "Hybrid": "#2ca02c"}
 def fig_model():
     fig, ax = plt.subplots(figsize=(6.9, 2.0))
     ax.axis("off"); ax.grid(False)
-    BW, BH, Y0 = 0.16, 0.52, 0.30
-    gap = 0.038
-    x0 = 0.024
+    BW, BH, Y0 = 0.155, 0.52, 0.30
+    gap = 0.052
+    x0 = 0.010
     labels = [
         "Sensor process\n$x[k]$: baseline + sine\n+ AR(1) + events",
         "Sender rule $a[k]$\nperiodic / change /\nhybrid ($\\Delta$, $H$)",
@@ -51,19 +51,20 @@ def fig_model():
         centers.append(bx + BW / 2)
     # arrows only inside the inter-box gaps
     for i in range(4):
-        gx0 = x0 + i * (BW + gap) + BW + 0.007
-        gx1 = x0 + (i + 1) * (BW + gap) - 0.007
+        gx0 = x0 + i * (BW + gap) + BW + 0.010
+        gx1 = x0 + (i + 1) * (BW + gap) - 0.010
         ax.annotate("", xy=(gx1, Y0 + BH / 2), xytext=(gx0, Y0 + BH / 2),
-                    arrowprops=dict(arrowstyle="-|>", color="#111111",
-                                    lw=1.0, shrinkA=0, shrinkB=0))
+                    arrowprops=dict(arrowstyle="-|>,head_width=0.22,"
+                                    "head_length=0.5", color="#111111",
+                                    lw=1.2, shrinkA=0, shrinkB=0))
     # dashed no-feedback arc fully below the box row
-    ax.annotate("", xy=(centers[1], Y0 - 0.03), xytext=(centers[3], Y0 - 0.03),
+    ax.annotate("", xy=(centers[1], Y0 - 0.02), xytext=(centers[3], Y0 - 0.02),
                 arrowprops=dict(arrowstyle="-|>", color="#8a6d1a", lw=0.9,
-                                ls="--", connectionstyle="arc3,rad=0.30"))
-    ax.text((centers[1] + centers[3]) / 2, 0.035,
+                                ls="--", connectionstyle="arc3,rad=0.34"))
+    ax.text((centers[1] + centers[3]) / 2, 0.025,
             "no feedback: sender state $(v,\\ \\tau)$ tracks its own attempts only",
             ha="center", va="bottom", fontsize=6.5, color="#8a6d1a")
-    ax.text(1 - 0.024, 0.985, "truth labels used only by offline evaluation",
+    ax.text(1 - 0.010, 0.985, "truth labels used only by offline evaluation",
             ha="right", va="top", fontsize=6.2, color="#777777")
     ax.set_xlim(0, 1); ax.set_ylim(-0.02, 1.02)
     fig.tight_layout(pad=0.25)
@@ -95,27 +96,33 @@ def fig_trace():
     good = S.make_channel(seed, 0.1)
     a, b = spans[3][0] - 90, spans[3][1] + 70     # window around 4th event
     k = np.arange(a, b)
-    fig, axes = plt.subplots(3, 1, figsize=(6.7, 3.5), sharex=True,
-                             gridspec_kw=dict(hspace=0.14))
+    fig, axes = plt.subplots(3, 1, figsize=(6.9, 3.8), sharex=True,
+                             gridspec_kw=dict(hspace=0.13))
+    handles = labels = None
     for ax, pol in zip(axes, ("Periodic", "Change", "Hybrid")):
         m, est, sent, rec = S.run_policy(x, good, spans, pol)
-        ax.plot(k, x[k], color="#444", lw=0.9, label="true $x[k]$")
-        ax.step(k, est[k], where="post", color=C[pol], lw=1.1,
-                label="receiver estimate")
+        h1, = ax.plot(k, x[k], color="#444", lw=0.9, label="true $x[k]$")
+        h2, = ax.step(k, est[k], where="post", color=C[pol], lw=1.1,
+                      label="receiver estimate")
         att = k[sent[k]]
         ok = rec[k][sent[k]]
-        ax.plot(att[ok], x[att][ok], "o", ms=3.0, mfc=C[pol], mec="none",
-                label="delivered")
-        ax.plot(att[~ok], x[att][~ok], "o", ms=3.4, mfc="none",
-                mec=C[pol], mew=0.9, label="erased")
+        h3, = ax.plot(att[ok], x[att][ok], "o", ms=3.0, mfc=C[pol],
+                      mec="none", label="delivered")
+        h4, = ax.plot(att[~ok], x[att][~ok], "o", ms=3.4, mfc="none",
+                      mec=C[pol], mew=0.9, label="erased")
+        if handles is None:
+            handles, labels = [h1, h2, h3, h4], [h.get_label() for h in (h1, h2, h3, h4)]
         ax.axhline(S.ALARM, color="#b0721a", ls=":", lw=0.9)
         ax.axvspan(spans[3][0], spans[3][1], color="#f2c979", alpha=0.25, lw=0)
-        ax.set_ylabel({"Periodic": "periodic\n$T{=}10$s",
-                       "Change": "change-only\n$\\Delta{=}0.5$C",
-                       "Hybrid": "hybrid\n$\\Delta{=}0.5$C, $H{=}15$s"}[pol])
+        ax.set_ylabel({"Periodic": "periodic\n$T{=}10$ s",
+                       "Change": "change-only\n$\\Delta{=}0.5$ C",
+                       "Hybrid": "hybrid\n$\\Delta{=}0.5$ C, $H{=}15$ s"}[pol])
         ax.set_ylim(21.2, 27.4)
-    axes[0].legend(ncol=4, loc="upper left", framealpha=0.9,
-                   columnspacing=0.9, handletextpad=0.4)
+    # figure-level legend in the top margin, never over the data
+    fig.legend(handles, labels, loc="upper center", ncol=4, frameon=True,
+               framealpha=0.95, edgecolor="#cccccc",
+               bbox_to_anchor=(0.55, 0.995))
+    fig.subplots_adjust(left=0.105, right=0.985, top=0.905, bottom=0.105)
     axes[2].set_xlabel(f"slot $k$ (s); shaded band = event window; seed {seed}, p = 0.1")
     fig.savefig(FIGS / "fig2_trace.png", bbox_inches="tight")
     plt.close(fig)
@@ -184,25 +191,31 @@ def fig_tradeoff():
 
 # ------------------------------------------------- deterministic tests ---
 def fig_stress():
-    lo = R["stress_lost_onset"]
-    sd = R["stress_slow_drift"]
-    fig, axes = plt.subplots(1, 2, figsize=(6.7, 2.3))
+    fig, axes = plt.subplots(1, 2, figsize=(6.9, 2.6))
 
     ax = axes[0]
     x = np.full(80, 22.0); x[17:57] = 26.0
     good = np.ones(80, dtype=bool); good[17] = False
-    ax.plot(x, color="#444", lw=0.9, label="true $x[k]$")
+    h0, = ax.plot(x, color="#444", lw=0.9, label="true $x[k]$")
+    hs = []
     for pol in ("Periodic", "Change", "Hybrid"):
         m, est, sent, rec = S.run_policy(x, good, [(17, 57)], pol)
-        ax.step(np.arange(80), est, where="post", color=C[pol], lw=1.0, label=pol)
+        h, = ax.step(np.arange(80), est, where="post", color=C[pol], lw=1.0,
+                     label=pol)
+        hs.append(h)
     ax.plot([17], [26.0], "x", color="#000", ms=6, mew=1.4)
-    ax.annotate("erased onset\npacket", (17, 26.0), textcoords="offset points",
-                xytext=(6, -16), fontsize=6.6)
+    ax.annotate("erased onset packet", (17, 26.0), xycoords="data",
+                xytext=(0.44, 0.92), textcoords="axes fraction",
+                fontsize=6.6, arrowprops=dict(arrowstyle="->", lw=0.7,
+                                              color="#555"))
     ax.axvspan(17, 28, color="#f2c979", alpha=0.25, lw=0)
-    ax.text(22.5, 20.6, "10 s deadline", fontsize=6.6, ha="center", color="#8a6d1a")
+    ax.text(22.5, 20.5, "10 s deadline", fontsize=6.6, ha="center",
+            color="#8a6d1a")
     ax.set_title("(a) lost onset packet, stable plateau", fontsize=8.0)
-    ax.set_xlabel("slot $k$ (s)"); ax.set_ylabel("value (C)"); ax.set_ylim(20.2, 27.4)
-    ax.legend(frameon=False, fontsize=6.4, loc="lower right")
+    ax.set_xlabel("slot $k$ (s)"); ax.set_ylabel("value (C)")
+    ax.set_ylim(20.2, 27.9)
+    ax.legend(handles=[h0] + hs, frameon=False, fontsize=6.4, loc="upper left")
+    ax.grid(False, axis="x")
 
     ax = axes[1]
     x = np.full(80, 24.8); x[20:51] = np.linspace(24.8, 25.2, 31); x[51:] = 25.2
@@ -213,11 +226,15 @@ def fig_stress():
         ax.step(np.arange(80), est, where="post", color=C[pol], lw=1.0, label=pol)
     ax.axhline(25.0, color="#b0721a", ls=":", lw=0.9)
     ax.axvline(35, color="#b0721a", ls=":", lw=0.7)
-    ax.annotate("alarm crossed,\ntotal rise 0.4 C < $\\Delta$", (35, 25.02),
-                textcoords="offset points", xytext=(6, 8), fontsize=6.6)
+    ax.annotate("alarm crossed,\ntotal rise 0.4 C < $\\Delta$", (36, 25.0),
+                xycoords="data", xytext=(0.50, 0.97),
+                textcoords="axes fraction", fontsize=6.6,
+                arrowprops=dict(arrowstyle="->", lw=0.7, color="#555"))
     ax.set_title("(b) slow drift below the change threshold", fontsize=8.0)
     ax.set_xlabel("slot $k$ (s)"); ax.set_ylabel("value (C)")
-    ax.legend(frameon=False, fontsize=6.4, loc="lower right")
+    ax.set_ylim(24.76, 25.28)
+    ax.legend(frameon=False, fontsize=6.4, loc="upper left")
+    ax.grid(False, axis="x")
 
     fig.tight_layout(pad=0.4)
     fig.savefig(FIGS / "fig5_stress.png", bbox_inches="tight")

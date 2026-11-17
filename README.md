@@ -14,7 +14,7 @@ device data is used. Group research draft, 14 November 2026.
 
 | Path | Purpose |
 | --- | --- |
-| `report/Topic31_Semantic_Event_Reporting_Report_EN.pdf` | The report: 10-page main body (single column, within the 15-page limit) + Appendix A with the complete code (excluded from the page count per course rule R4). |
+| `report/Topic31_Semantic_Event_Reporting_Report_EN.pdf` | The report: 10 pages, single column (within the 15-page limit). The complete code lives in this repository (course rule R3, hosted-code option). |
 | `simulate.py` | Complete numerical script (identical to the report's Appendix A). Runs every experiment, validation gate and stress case; writes `results.json` with per-run values. |
 | `results.json` | Raw results produced by `simulate.py` on 2026-11-14 (seeds below). |
 | `make_figs.py` | Regenerates the report figures (Figs. 1–5) from `results.json` into `figs/`. |

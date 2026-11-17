@@ -6,7 +6,7 @@ from pathlib import Path
 import pymupdf
 
 HERE = Path(__file__).parent
-PDF = HERE / "report" / "Topic31_Semantic_Event_Reporting_Report_EN.pdf"
+PDF = HERE / "Topic31_Semantic_Event_Reporting_Report_EN.pdf"
 R = json.loads((HERE / "results.json").read_text())
 
 raw = PDF.read_bytes()
@@ -17,12 +17,13 @@ doc = pymupdf.open(str(PDF))
 texts = [doc[i].get_text() for i in range(doc.page_count)]
 full = "\n".join(texts)
 
-# locate appendix start
-app_page = next(i for i, t in enumerate(texts)
-                if "APPENDIX A: NUMERICAL CODE" in t)
-main_pages = app_page
-print(f"pages: total={doc.page_count}, main body={main_pages}, "
-      f"appendix={doc.page_count - main_pages} (appendix starts page {app_page+1})")
+# locate appendix start (there is none: R3 satisfied via repository link)
+assert "APPENDIX A" not in full, "appendix should be removed"
+assert "github.com/endeavorxn/topic31-semantic-event-reporting" in full, \
+    "R3: repository link missing"
+assert "simulate.py" in full, "R3: run instructions missing"
+main_pages = doc.page_count
+print(f"pages: total={doc.page_count} (= main body, limit 15); no appendix")
 w = doc[0].rect.width
 print(f"page size: {w:.0f} x {doc[0].rect.height:.0f} (Letter=612x792)")
 assert main_pages <= 15, "R2 FAIL: main body exceeds 15 single-column pages"
@@ -32,25 +33,12 @@ for i in range(doc.page_count):
     if len(xs) > 1:
         gaps = [(a, b) for a, b in zip(xs, xs[1:]) if b - a > 60]
         assert not gaps, f"R2: two-column layout detected on page {i+1}: {gaps}"
-print(f"R2 PASS: single-column main body {main_pages} <= 15 pages")
-
-assert "Excluded from the main-report page count" in texts[app_page], \
-    "R4: exclusion note missing on appendix first page"
-print("R4 PASS: appendix labelled, page-separated, exclusion note present")
+print(f"R2 PASS: single-column report, {main_pages} <= 15 pages")
+print("R4 PASS: no appendix present, rule not applicable")
 
 assert "requirement R3" in full and "github.com/endeavorxn/topic31-semantic-event-reporting" in full, \
     "GitHub link missing from report (R3 option a)"
-code_src = (HERE / "simulate.py").read_text().splitlines()
-app_text = "\n".join(texts[app_page:])
-missing = [ln for ln in code_src if ln.strip() and ln not in app_text]
-print(f"R3 PASS: appendix-code option in effect; code lines found: "
-      f"{len(code_src)-len(missing)}/{len(code_src)}")
-for ln in missing[:3]:
-    print("   missing:", ln[:80])
-
-assert "AI-use disclosure" not in full and "AI assistant" not in full, \
-    "AI disclosure still present"
-print("AI-disclosure removed: OK")
+print(f"R3 PASS: repository link in report body")
 
 checks = {
     "abstract kb": f"{R['loss']['0.1']['summary']['Hybrid']['bytes']['mean']/1000:.3f}",
@@ -95,7 +83,7 @@ for s in small[:8]:
 heads = ["I. INTRODUCTION", "II. LITERATURE", "III. SYSTEM MODEL",
          "IV. RULE BEHAVIOUR", "V. EXPERIMENTAL DESIGN", "VI. RESULTS",
          "VII. DISCUSSION", "VIII. CONCLUSION",
-         "REFERENCES AND REPRODUCIBILITY", "APPENDIX A"]
+         "REFERENCES AND REPRODUCIBILITY"]
 pos = [full.find(h) for h in heads]
 print("headings found in order:", all(p >= 0 for p in pos) and pos == sorted(pos))
 

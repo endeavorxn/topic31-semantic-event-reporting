@@ -243,9 +243,9 @@ Section&nbsp;VI-D.</p>
 and how much application error suppression causes. No language-model semantic
 communication is used and no semantic-capacity claim is made. All numerical
 parameters are illustrative experimental assumptions, not device
-specifications or safety limits. The main report body ends before Appendix&nbsp;A,
-which contains the complete numerical script and is excluded from the page
-count, as required by the course rules.</p>
+specifications or safety limits. The complete numerical script that produced
+every number reported here is available in the group's public repository,
+referenced in the reproducibility section at the end of this report.</p>
 """)
 
 # ------------------------------------------------------------------ 2 -----
@@ -770,41 +770,24 @@ Trans. Wireless Commun.).<br>
 Effectiveness: Goal-Oriented Sampling for Remote Decision Making,&rdquo;
 arXiv:2504.19507v3, 2025 (journal reference listed by arXiv: IEEE Trans. Inf.
 Theory, vol. 72, no. 4, pp. 2237&ndash;2276, Apr. 2026).</p>
-<p><b>Reproducing the numbers.</b> Appendix&nbsp;A contains the complete
-numerical script; save it as simulate.py and run <code>python simulate.py</code>
-(NumPy and SciPy required). It executes the validation checks, regenerates
+<p><b>Reproducing the numbers.</b> The complete numerical script
+(simulate.py), the figure and PDF build scripts, and the raw results file
+with per-run values are available in the group's public repository at
+<span style="white-space:nowrap">https://github.com/endeavorxn/topic31-semantic-event-reporting</span>
+(requirement R3, hosted-code option). Run <code>python simulate.py</code>
+(NumPy and SciPy required): it executes the validation checks, regenerates
 every number in this report deterministically and writes results.json,
 including per-run values so all intervals and paired comparisons can be
-recomputed. The figure and PDF build scripts ship alongside the results file.
-Executed environment: Python 3.13.5, NumPy 2.2.6, SciPy 1.16.1, Matplotlib
-3.10.3, PyMuPDF 2.0 on Windows. Test seeds 1000&ndash;1029;
-traffic-calibration design seeds 2000&ndash;2009. The complete source
-package &mdash; simulation, figure and report build scripts, raw results and
-this PDF &mdash; is available in the group's public repository at
-https://github.com/endeavorxn/topic31-semantic-event-reporting; the code is
-additionally included as Appendix&nbsp;A (requirement R3), and arXiv metadata
-was re-checked on 14 November 2026.</p>
+recomputed. Executed environment: Python 3.13.5, NumPy 2.2.6, SciPy 1.16.1,
+Matplotlib 3.10.3, PyMuPDF 2.0 on Windows. Test seeds 1000&ndash;1029;
+traffic-calibration design seeds 2000&ndash;2009. arXiv metadata was
+re-checked on 14 November 2026.</p>
 """)
 
-# ------------------------------------------------------------- appendix ---
-new_page()
-appendix_from = len(pages) - 1
-place("""
-<h1>APPENDIX A: NUMERICAL CODE (COMPLETE)</h1>
-<p style="font-size:8.4pt"><b>Excluded from the main-report page count.</b>
-Complete script, verbatim, with line numbers for reference. Dependencies:
-Python 3 with NumPy and SciPy. Run time is about one minute.</p>
-""", gap=2)
-
-code = (HERE / "simulate.py").read_text().splitlines()
-CHUNK = 46
-for i in range(0, len(code), CHUNK):
-    chunk = code[i:i + CHUNK]
-    esc = "\n".join(
-        f"{n+1:03d}  " + line.replace("&", "&amp;").replace("<", "&lt;")
-        .replace(">", "&gt;")
-        for n, line in enumerate(chunk, start=i))
-    place(f"<pre>{esc}</pre>", gap=1)
+# No appendix: requirement R3 is satisfied by the public repository link
+# shared in the report body (the course rules allow either GitHub or an
+# appendix; the repository option keeps the report within 10 pages).
+appendix_from = len(pages)
 
 # ===========================================================================
 # Headers, footers, page numbers (second pass, after dropping scratch page)
