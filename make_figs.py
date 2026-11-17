@@ -57,16 +57,16 @@ def fig_model():
                     arrowprops=dict(arrowstyle="-|>,head_width=0.22,"
                                     "head_length=0.5", color="#111111",
                                     lw=1.2, shrinkA=0, shrinkB=0))
-    # dashed no-feedback arc fully below the box row
-    ax.annotate("", xy=(centers[1], Y0 - 0.02), xytext=(centers[3], Y0 - 0.02),
+    # dashed no-feedback arc fully below the box row (negative rad bows it down)
+    ax.annotate("", xy=(centers[1], Y0 - 0.025), xytext=(centers[3], Y0 - 0.025),
                 arrowprops=dict(arrowstyle="-|>", color="#8a6d1a", lw=0.9,
-                                ls="--", connectionstyle="arc3,rad=0.34"))
-    ax.text((centers[1] + centers[3]) / 2, 0.025,
+                                ls="--", connectionstyle="arc3,rad=-0.28"))
+    ax.text((centers[1] + centers[3]) / 2, 0.10,
             "no feedback: sender state $(v,\\ \\tau)$ tracks its own attempts only",
-            ha="center", va="bottom", fontsize=6.5, color="#8a6d1a")
+            ha="center", va="top", fontsize=6.5, color="#8a6d1a")
     ax.text(1 - 0.010, 0.985, "truth labels used only by offline evaluation",
             ha="right", va="top", fontsize=6.2, color="#777777")
-    ax.set_xlim(0, 1); ax.set_ylim(-0.02, 1.02)
+    ax.set_xlim(0, 1); ax.set_ylim(-0.03, 1.02)
     fig.tight_layout(pad=0.25)
 
     # validation: every box label must fit inside its rectangle
@@ -113,7 +113,8 @@ def fig_trace():
         if handles is None:
             handles, labels = [h1, h2, h3, h4], [h.get_label() for h in (h1, h2, h3, h4)]
         ax.axhline(S.ALARM, color="#b0721a", ls=":", lw=0.9)
-        ax.axvspan(spans[3][0], spans[3][1], color="#f2c979", alpha=0.25, lw=0)
+        ax.axvline(spans[3][0], color="#888888", ls="--", lw=0.7)
+        ax.axvline(spans[3][1], color="#888888", ls="--", lw=0.7)
         ax.set_ylabel({"Periodic": "periodic\n$T{=}10$ s",
                        "Change": "change-only\n$\\Delta{=}0.5$ C",
                        "Hybrid": "hybrid\n$\\Delta{=}0.5$ C, $H{=}15$ s"}[pol])
@@ -123,7 +124,7 @@ def fig_trace():
                framealpha=0.95, edgecolor="#cccccc",
                bbox_to_anchor=(0.55, 0.995))
     fig.subplots_adjust(left=0.105, right=0.985, top=0.905, bottom=0.105)
-    axes[2].set_xlabel(f"slot $k$ (s); shaded band = event window; seed {seed}, p = 0.1")
+    axes[2].set_xlabel(f"slot $k$ (s); dashed lines = event window; seed {seed}, p = 0.1")
     fig.savefig(FIGS / "fig2_trace.png", bbox_inches="tight")
     plt.close(fig)
 
@@ -208,7 +209,8 @@ def fig_stress():
                 xytext=(0.44, 0.92), textcoords="axes fraction",
                 fontsize=6.6, arrowprops=dict(arrowstyle="->", lw=0.7,
                                               color="#555"))
-    ax.axvspan(17, 28, color="#f2c979", alpha=0.25, lw=0)
+    ax.axvline(17, color="#888888", ls="--", lw=0.7)
+    ax.axvline(28, color="#888888", ls="--", lw=0.7)
     ax.text(22.5, 20.5, "10 s deadline", fontsize=6.6, ha="center",
             color="#8a6d1a")
     ax.set_title("(a) lost onset packet, stable plateau", fontsize=8.0)
@@ -226,10 +228,7 @@ def fig_stress():
         ax.step(np.arange(80), est, where="post", color=C[pol], lw=1.0, label=pol)
     ax.axhline(25.0, color="#b0721a", ls=":", lw=0.9)
     ax.axvline(35, color="#b0721a", ls=":", lw=0.7)
-    ax.annotate("alarm crossed,\ntotal rise 0.4 C < $\\Delta$", (36, 25.0),
-                xycoords="data", xytext=(0.50, 0.97),
-                textcoords="axes fraction", fontsize=6.6,
-                arrowprops=dict(arrowstyle="->", lw=0.7, color="#555"))
+    # the caption explains the crossing; keep the panel itself clean
     ax.set_title("(b) slow drift below the change threshold", fontsize=8.0)
     ax.set_xlabel("slot $k$ (s)"); ax.set_ylabel("value (C)")
     ax.set_ylim(24.76, 25.28)

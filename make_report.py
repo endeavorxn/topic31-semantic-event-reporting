@@ -61,7 +61,8 @@ h1 {font-size: 10pt; font-weight: normal; text-align: center;
 h2 {font-size: 10pt; font-style: italic; font-weight: normal;
     margin: 8pt 0 3pt 0;}
 p {margin: 0 0 4pt 0; text-align: justify;}
-td, th {font-size: 8pt; padding: 2pt 3.4pt; border: 0.5pt solid #000;}
+td, th {font-size: 8pt; padding: 2.6pt 3.4pt; border: none;}
+th {font-weight: bold;}
 th {font-weight: bold;}
 pre {font-family: monospace; font-size: 6.8pt; margin: 0;}
 """
@@ -154,21 +155,33 @@ def _roman(n):
 
 
 def table(headers, rows, caption, widths=None):
+    """Booktabs-style table: no vertical borders; three horizontal rules
+    (top, below header, bottom) drawn as vector lines after placement."""
     global cur_y
     tab_no[0] += 1
     head = "".join(f"<th>{h}</th>" for h in headers)
     body = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>"
                    for r in rows)
-    html = ('<table style="width:100%; margin:2pt 0 1pt 0">'
-            f'<tr>{head}</tr>{body}</table>')
+    tbl = ('<table style="width:100%; margin:2pt 0 1pt 0">'
+           f'<tr>{head}</tr>{body}</table>')
     cap = (f'<p style="font-size:8pt; text-align:center; margin:0 0 2pt 0">'
            f'<b>TABLE {_roman(tab_no[0])}</b><br>{caption}</p>')
-    h = measure(html + cap)
-    if cur_y + h > PH - MBOT:
+    h_all = measure(tbl + cap)
+    cap_h = measure(cap)
+    h_tbl = h_all - cap_h
+    # header-row height, measured with an identical single-row table
+    h_head = measure('<table style="width:100%"><tr>' + head + "</tr></table>")
+    if cur_y + h_all > PH - MBOT:
         new_page()
     doc[page_idx].insert_htmlbox(
-        pymupdf.Rect(ML, cur_y, ML + CW, cur_y + h + 1.5), html + cap, css=CSS)
-    cur_y += h + 7
+        pymupdf.Rect(ML, cur_y, ML + CW, cur_y + h_all + 1.5), tbl + cap,
+        css=CSS)
+    y0, y1 = cur_y + 1, cur_y + h_tbl
+    ymid = min(cur_y + h_head, y1 - 1)
+    for y, lw in ((y0, 0.9), (ymid, 0.5), (y1, 0.9)):
+        doc[page_idx].draw_line(pymupdf.Point(ML, y), pymupdf.Point(ML + CW, y),
+                                color=(0, 0, 0), width=lw)
+    cur_y += h_all + 7
 
 
 # ===========================================================================
@@ -509,7 +522,7 @@ change-based rules genuinely lead
 s versus """ + f"{PER['penalty']['mean']:.2f}" + " &plusmn; " + f"{PER['penalty']['half']:.2f}" + """ s).</p>
 """)
 image("fig2_trace.png", 0.9,
-      "<b>Fig. 2.</b> One trace window (seed 1000, p = 0.1; shaded band = event "
+      "<b>Fig. 2.</b> One trace window (seed 1000, p = 0.1; dashed vertical lines = "
       "window; dotted line = 25 &deg;C alarm level). Markers show send attempts "
       "(filled = delivered, hollow = erased). Periodic sends on the clock and "
       "delays the alarm until its next slot; change-only sends at the onset and "
