@@ -1,0 +1,5656 @@
+{
+ "settings": {
+  "N": 3600,
+  "runs": 30,
+  "seeds": [
+   1000,
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008,
+   1009,
+   1010,
+   1011,
+   1012,
+   1013,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   1020,
+   1021,
+   1022,
+   1023,
+   1024,
+   1025,
+   1026,
+   1027,
+   1028,
+   1029
+  ],
+  "design_seeds": [
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009
+  ],
+  "pkt_bytes": 32.0,
+  "airtime_ms": 1.0,
+  "energy_uj": 30.0,
+  "alarm": 25.0,
+  "deadline": 10,
+  "delta": 0.5,
+  "h": 15,
+  "t": 10
+ },
+ "loss": {
+  "0.0": {
+   "summary": {
+    "Periodic": {
+     "packets": {
+      "mean": 360.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "bytes": {
+      "mean": 11520.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "delivered": {
+      "mean": 360.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "airtime_ms": {
+      "mean": 360.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "energy_uj": {
+      "mean": 10800.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "rmse": {
+      "mean": 0.6944638174108045,
+      "half": 0.01904790293929574,
+      "n": 30
+     },
+     "miss": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "penalty": {
+      "mean": 4.563888888888888,
+      "half": 0.33779016107952636,
+      "n": 30
+     },
+     "faocc": {
+      "mean": 0.016506141481147093,
+      "half": 0.0012111401405351116,
+      "n": 30
+     },
+     "delay": {
+      "mean": 4.563888888888888,
+      "half": 0.33779016107952636,
+      "n": 30
+     }
+    },
+    "Change": {
+     "packets": {
+      "mean": 29.733333333333334,
+      "half": 0.7962509550573074,
+      "n": 30
+     },
+     "bytes": {
+      "mean": 951.4666666666667,
+      "half": 25.480030561833836,
+      "n": 30
+     },
+     "delivered": {
+      "mean": 29.733333333333334,
+      "half": 0.7962509550573074,
+      "n": 30
+     },
+     "airtime_ms": {
+      "mean": 29.733333333333334,
+      "half": 0.7962509550573074,
+      "n": 30
+     },
+     "energy_uj": {
+      "mean": 892.0,
+      "half": 23.887528651719222,
+      "n": 30
+     },
+     "rmse": {
+      "mean": 0.18008102286148928,
+      "half": 0.004209511016858475,
+      "n": 30
+     },
+     "miss": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "penalty": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "faocc": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "delay": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     }
+    },
+    "Hybrid": {
+     "packets": {
+      "mean": 251.73333333333332,
+      "half": 0.4797323934379495,
+      "n": 30
+     },
+     "bytes": {
+      "mean": 8055.466666666666,
+      "half": 15.351436590014384,
+      "n": 30
+     },
+     "delivered": {
+      "mean": 251.73333333333332,
+      "half": 0.4797323934379495,
+      "n": 30
+     },
+     "airtime_ms": {
+      "mean": 251.73333333333332,
+      "half": 0.4797323934379495,
+      "n": 30
+     },
+     "energy_uj": {
+      "mean": 7552.0,
+      "half": 14.391971803138489,
+      "n": 30
+     },
+     "rmse": {
+      "mean": 0.09644918229580311,
+      "half": 0.0011781187569583418,
+      "n": 30
+     },
+     "miss": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "penalty": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "faocc": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "delay": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     }
+    }
+   },
+   "raw": {
+    "Periodic": [
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6591346952512328,
+      "miss": 0.0,
+      "delay": 3.8333333333333335,
+      "penalty": 3.8333333333333335,
+      "faocc": 0.016373185047883845
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6964255373694721,
+      "miss": 0.0,
+      "delay": 5.083333333333333,
+      "penalty": 5.083333333333333,
+      "faocc": 0.010549177784672665
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6742045717796643,
+      "miss": 0.0,
+      "delay": 5.083333333333333,
+      "penalty": 5.083333333333333,
+      "faocc": 0.0122737035900583
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7510057391356824,
+      "miss": 0.0,
+      "delay": 5.666666666666667,
+      "penalty": 5.666666666666667,
+      "faocc": 0.020621729763004002
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6295911544563344,
+      "miss": 0.0,
+      "delay": 4.166666666666667,
+      "penalty": 4.166666666666667,
+      "faocc": 0.013341607198262488
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7019587128849786,
+      "miss": 0.0,
+      "delay": 4.25,
+      "penalty": 4.25,
+      "faocc": 0.017151607963246555
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7226116836528506,
+      "miss": 0.0,
+      "delay": 5.5,
+      "penalty": 5.5,
+      "faocc": 0.01707317073170732
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6384840850337447,
+      "miss": 0.0,
+      "delay": 3.8333333333333335,
+      "penalty": 3.8333333333333335,
+      "faocc": 0.011830635118306352
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7269285308109324,
+      "miss": 0.0,
+      "delay": 4.833333333333333,
+      "penalty": 4.833333333333333,
+      "faocc": 0.0191713048855906
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6833184434711251,
+      "miss": 0.0,
+      "delay": 5.166666666666667,
+      "penalty": 5.166666666666667,
+      "faocc": 0.014607425441265977
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7489432748323541,
+      "miss": 0.0,
+      "delay": 6.583333333333333,
+      "penalty": 6.583333333333333,
+      "faocc": 0.017141108050198958
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7350349938191612,
+      "miss": 0.0,
+      "delay": 4.666666666666667,
+      "penalty": 4.666666666666667,
+      "faocc": 0.020307692307692308
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6735165367575574,
+      "miss": 0.0,
+      "delay": 4.75,
+      "penalty": 4.75,
+      "faocc": 0.014506172839506172
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6813390557719188,
+      "miss": 0.0,
+      "delay": 3.8333333333333335,
+      "penalty": 3.8333333333333335,
+      "faocc": 0.01934295363831747
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.674780260055724,
+      "miss": 0.0,
+      "delay": 3.6666666666666665,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.017022593624264934
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7153913552408083,
+      "miss": 0.0,
+      "delay": 3.9166666666666665,
+      "penalty": 3.9166666666666665,
+      "faocc": 0.021651716671821836
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6595431773029786,
+      "miss": 0.0,
+      "delay": 3.3333333333333335,
+      "penalty": 3.3333333333333335,
+      "faocc": 0.0171606864274571
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.745994548588644,
+      "miss": 0.0,
+      "delay": 4.75,
+      "penalty": 4.75,
+      "faocc": 0.018220467658669907
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7629020706394525,
+      "miss": 0.0,
+      "delay": 5.083333333333333,
+      "penalty": 5.083333333333333,
+      "faocc": 0.020640788662969808
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6588307556872844,
+      "miss": 0.0,
+      "delay": 4.0,
+      "penalty": 4.0,
+      "faocc": 0.016129032258064516
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6101220666654183,
+      "miss": 0.0,
+      "delay": 4.333333333333333,
+      "penalty": 4.333333333333333,
+      "faocc": 0.009541397353031703
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7033834498535588,
+      "miss": 0.0,
+      "delay": 4.5,
+      "penalty": 4.5,
+      "faocc": 0.015403573629081947
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6581545638910297,
+      "miss": 0.0,
+      "delay": 3.5833333333333335,
+      "penalty": 3.5833333333333335,
+      "faocc": 0.016869728209934397
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6806603806209515,
+      "miss": 0.0,
+      "delay": 4.75,
+      "penalty": 4.75,
+      "faocc": 0.014158202523853494
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.5558346879506243,
+      "miss": 0.0,
+      "delay": 2.0,
+      "penalty": 2.0,
+      "faocc": 0.014916286149162862
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7885127337213823,
+      "miss": 0.0,
+      "delay": 5.166666666666667,
+      "penalty": 5.166666666666667,
+      "faocc": 0.02282541640962369
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7638603293954517,
+      "miss": 0.0,
+      "delay": 4.833333333333333,
+      "penalty": 4.833333333333333,
+      "faocc": 0.020320197044334975
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6974033750368279,
+      "miss": 0.0,
+      "delay": 5.333333333333333,
+      "penalty": 5.333333333333333,
+      "faocc": 0.014796547472256474
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6815845006272179,
+      "miss": 0.0,
+      "delay": 4.25,
+      "penalty": 4.25,
+      "faocc": 0.015995078437403876
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 360,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7544592520197716,
+      "miss": 0.0,
+      "delay": 6.166666666666667,
+      "penalty": 6.166666666666667,
+      "faocc": 0.015241057542768274
+     }
+    ],
+    "Change": [
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 29,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 0.16280506883972282,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 27,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 0.170958684102375,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 27,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 0.17092195436611385,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 28,
+      "bytes": 896,
+      "delivered": 28,
+      "airtime_ms": 28.0,
+      "energy_uj": 840.0,
+      "rmse": 0.17371432813363485,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 30,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 0.19250122719896912,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 30,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 0.18633631744873058,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 35,
+      "bytes": 1120,
+      "delivered": 35,
+      "airtime_ms": 35.0,
+      "energy_uj": 1050.0,
+      "rmse": 0.1925136813545988,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 32,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.19803717867893456,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 28,
+      "bytes": 896,
+      "delivered": 28,
+      "airtime_ms": 28.0,
+      "energy_uj": 840.0,
+      "rmse": 0.1569500865286358,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 28,
+      "bytes": 896,
+      "delivered": 28,
+      "airtime_ms": 28.0,
+      "energy_uj": 840.0,
+      "rmse": 0.1848152566356151,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 32,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.17992326649955268,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 30,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 0.16925710154055848,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 27,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 0.18473537668264156,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 29,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 0.17375775533198623,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 29,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 0.1922609198462653,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 31,
+      "bytes": 992,
+      "delivered": 31,
+      "airtime_ms": 31.0,
+      "energy_uj": 930.0,
+      "rmse": 0.1703547918801736,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 30,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 0.1850789394681496,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 32,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.17979026192149333,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 30,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 0.16975733163661424,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 29,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 0.1760684548990235,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 32,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.19376095745160388,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 29,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 0.1627410432477337,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 32,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.18154069811695794,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 32,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.19576244227899578,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 27,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 0.1864646468132801,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 26,
+      "bytes": 832,
+      "delivered": 26,
+      "airtime_ms": 26.0,
+      "energy_uj": 780.0,
+      "rmse": 0.16266644473816805,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 31,
+      "bytes": 992,
+      "delivered": 31,
+      "airtime_ms": 31.0,
+      "energy_uj": 930.0,
+      "rmse": 0.19516284049935423,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 31,
+      "bytes": 992,
+      "delivered": 31,
+      "airtime_ms": 31.0,
+      "energy_uj": 930.0,
+      "rmse": 0.18172103958344327,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 32,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.18677990064911393,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 27,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 0.18529268947223787,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     }
+    ],
+    "Hybrid": [
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 251,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.09486111943654735,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 249,
+      "bytes": 7968,
+      "delivered": 249,
+      "airtime_ms": 249.0,
+      "energy_uj": 7470.0,
+      "rmse": 0.09493952344512717,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 252,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.09613875722406547,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 254,
+      "bytes": 8128,
+      "delivered": 254,
+      "airtime_ms": 254.0,
+      "energy_uj": 7620.0,
+      "rmse": 0.0956668783607462,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 253,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.09411907684840023,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 253,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.09294683417593967,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 253,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.09697921303103733,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 253,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.10444979551924675,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 251,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.08969315602000683,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 252,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.09471469347943726,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 252,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.09819448514942414,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 252,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.0996496078453976,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 250,
+      "bytes": 8000,
+      "delivered": 250,
+      "airtime_ms": 250.0,
+      "energy_uj": 7500.0,
+      "rmse": 0.0990914233979762,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 252,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.09368210596842144,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 251,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.09876395431016712,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 252,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.0980448945172902,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 251,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.09779640235923302,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 249,
+      "bytes": 7968,
+      "delivered": 249,
+      "airtime_ms": 249.0,
+      "energy_uj": 7470.0,
+      "rmse": 0.09835863373863962,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 251,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.09788625889495413,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 253,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.09732800070149675,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 251,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.09967380272024394,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 254,
+      "bytes": 8128,
+      "delivered": 254,
+      "airtime_ms": 254.0,
+      "energy_uj": 7620.0,
+      "rmse": 0.09316072504975764,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 252,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.10062471857074666,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 253,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.0987433992104042,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 253,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.09510246078622447,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 252,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.0916056209483667,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 251,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.09278969432173957,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 251,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.09778754050516324,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 251,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.09205673063026375,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     },
+     {
+      "packets": 250,
+      "bytes": 8000,
+      "delivered": 250,
+      "airtime_ms": 250.0,
+      "energy_uj": 7500.0,
+      "rmse": 0.09862596170762881,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.0
+     }
+    ]
+   }
+  },
+  "0.1": {
+   "summary": {
+    "Periodic": {
+     "packets": {
+      "mean": 360.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "bytes": {
+      "mean": 11520.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "delivered": {
+      "mean": 323.23333333333335,
+      "half": 2.1920218658040476,
+      "n": 30
+     },
+     "airtime_ms": {
+      "mean": 360.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "energy_uj": {
+      "mean": 10800.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "rmse": {
+      "mean": 0.7839278803210584,
+      "half": 0.019579765435005895,
+      "n": 30
+     },
+     "miss": {
+      "mean": 0.10833333333333332,
+      "half": 0.03283994849153603,
+      "n": 30
+     },
+     "penalty": {
+      "mean": 5.336111111111112,
+      "half": 0.3966873853835671,
+      "n": 30
+     },
+     "faocc": {
+      "mean": 0.02102819752694899,
+      "half": 0.0016287440080656908,
+      "n": 30
+     },
+     "delay": {
+      "mean": 4.62486531986532,
+      "half": 0.4301956234006958,
+      "n": 30
+     }
+    },
+    "Change": {
+     "packets": {
+      "mean": 29.733333333333334,
+      "half": 0.7962509550573074,
+      "n": 30
+     },
+     "bytes": {
+      "mean": 951.4666666666667,
+      "half": 25.480030561833836,
+      "n": 30
+     },
+     "delivered": {
+      "mean": 26.633333333333333,
+      "half": 0.8463051859299066,
+      "n": 30
+     },
+     "airtime_ms": {
+      "mean": 29.733333333333334,
+      "half": 0.7962509550573074,
+      "n": 30
+     },
+     "energy_uj": {
+      "mean": 892.0,
+      "half": 23.887528651719222,
+      "n": 30
+     },
+     "rmse": {
+      "mean": 1.0051237940565385,
+      "half": 0.1713169061244152,
+      "n": 30
+     },
+     "miss": {
+      "mean": 0.11944444444444444,
+      "half": 0.02793184270707984,
+      "n": 30
+     },
+     "penalty": {
+      "mean": 1.3138888888888889,
+      "half": 0.30725026977787817,
+      "n": 30
+     },
+     "faocc": {
+      "mean": 0.06584517144143269,
+      "half": 0.024294957370089458,
+      "n": 30
+     },
+     "delay": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     }
+    },
+    "Hybrid": {
+     "packets": {
+      "mean": 251.73333333333332,
+      "half": 0.4797323934379495,
+      "n": 30
+     },
+     "bytes": {
+      "mean": 8055.466666666666,
+      "half": 15.351436590014384,
+      "n": 30
+     },
+     "delivered": {
+      "mean": 225.93333333333334,
+      "half": 1.5564682513215067,
+      "n": 30
+     },
+     "airtime_ms": {
+      "mean": 251.73333333333332,
+      "half": 0.4797323934379495,
+      "n": 30
+     },
+     "energy_uj": {
+      "mean": 7552.0,
+      "half": 14.391971803138489,
+      "n": 30
+     },
+     "rmse": {
+      "mean": 0.45061907573230214,
+      "half": 0.04034553947575704,
+      "n": 30
+     },
+     "miss": {
+      "mean": 0.11944444444444444,
+      "half": 0.02793184270707984,
+      "n": 30
+     },
+     "penalty": {
+      "mean": 1.3138888888888889,
+      "half": 0.30725026977787817,
+      "n": 30
+     },
+     "faocc": {
+      "mean": 0.006324258394911091,
+      "half": 0.0020037185644744995,
+      "n": 30
+     },
+     "delay": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     }
+    }
+   },
+   "raw": {
+    "Periodic": [
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 325,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7772720169647251,
+      "miss": 0.08333333333333333,
+      "delay": 3.4545454545454546,
+      "penalty": 4.083333333333333,
+      "faocc": 0.02564102564102564
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 330,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7692328903534463,
+      "miss": 0.16666666666666666,
+      "delay": 4.3,
+      "penalty": 5.416666666666667,
+      "faocc": 0.010549177784672665
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 310,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7848021223333053,
+      "miss": 0.16666666666666666,
+      "delay": 5.6,
+      "penalty": 6.5,
+      "faocc": 0.0122737035900583
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 324,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7752762216010072,
+      "miss": 0.0,
+      "delay": 5.666666666666667,
+      "penalty": 5.666666666666667,
+      "faocc": 0.023699599876885195
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 319,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.796663240051592,
+      "miss": 0.08333333333333333,
+      "delay": 3.8181818181818183,
+      "penalty": 4.416666666666667,
+      "faocc": 0.025752404591995036
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 325,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7656885813031122,
+      "miss": 0.16666666666666666,
+      "delay": 4.0,
+      "penalty": 5.166666666666667,
+      "faocc": 0.017151607963246555
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 319,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8330288347205304,
+      "miss": 0.08333333333333333,
+      "delay": 6.818181818181818,
+      "penalty": 7.166666666666667,
+      "faocc": 0.023170731707317073
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 313,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7442605807674731,
+      "miss": 0.16666666666666666,
+      "delay": 3.4,
+      "penalty": 4.666666666666667,
+      "faocc": 0.014943960149439602
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 324,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8355732433450086,
+      "miss": 0.3333333333333333,
+      "delay": 4.5,
+      "penalty": 6.666666666666667,
+      "faocc": 0.0191713048855906
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 323,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7386273996119399,
+      "miss": 0.0,
+      "delay": 6.0,
+      "penalty": 6.0,
+      "faocc": 0.017650639074863056
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 322,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8006571301717493,
+      "miss": 0.0,
+      "delay": 7.416666666666667,
+      "penalty": 7.416666666666667,
+      "faocc": 0.020202020202020204
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 320,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.756524246668358,
+      "miss": 0.0,
+      "delay": 4.666666666666667,
+      "penalty": 4.666666666666667,
+      "faocc": 0.023384615384615386
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 324,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8758199160887672,
+      "miss": 0.16666666666666666,
+      "delay": 5.4,
+      "penalty": 6.333333333333333,
+      "faocc": 0.026851851851851852
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 332,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7305545877109663,
+      "miss": 0.08333333333333333,
+      "delay": 4.090909090909091,
+      "penalty": 4.666666666666667,
+      "faocc": 0.022413263739637704
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 333,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.712441770473528,
+      "miss": 0.0,
+      "delay": 3.6666666666666665,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.020117610646858557
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 332,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8048428243484425,
+      "miss": 0.16666666666666666,
+      "delay": 3.6,
+      "penalty": 4.833333333333333,
+      "faocc": 0.024744819053510673
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 328,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.750480476929786,
+      "miss": 0.08333333333333333,
+      "delay": 3.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.0234009360374415
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 325,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7818449012077358,
+      "miss": 0.0,
+      "delay": 4.75,
+      "penalty": 4.75,
+      "faocc": 0.021257212268448223
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 323,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8220606234294631,
+      "miss": 0.16666666666666666,
+      "delay": 4.8,
+      "penalty": 5.833333333333333,
+      "faocc": 0.020640788662969808
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 323,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7607563324449717,
+      "miss": 0.08333333333333333,
+      "delay": 4.2727272727272725,
+      "penalty": 4.833333333333333,
+      "faocc": 0.02543424317617866
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 320,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7650743900301135,
+      "miss": 0.08333333333333333,
+      "delay": 4.636363636363637,
+      "penalty": 5.166666666666667,
+      "faocc": 0.02185287780855648
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 333,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8013695520210976,
+      "miss": 0.08333333333333333,
+      "delay": 4.7272727272727275,
+      "penalty": 5.25,
+      "faocc": 0.021565003080714726
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 326,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.6900540614803975,
+      "miss": 0.0,
+      "delay": 3.5833333333333335,
+      "penalty": 3.5833333333333335,
+      "faocc": 0.01999375195251484
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 325,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7832518505515376,
+      "miss": 0.16666666666666666,
+      "delay": 5.0,
+      "penalty": 6.0,
+      "faocc": 0.017236072637734686
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 320,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7401264176484665,
+      "miss": 0.25,
+      "delay": 2.0,
+      "penalty": 4.25,
+      "faocc": 0.024048706240487064
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 324,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8736285390221663,
+      "miss": 0.08333333333333333,
+      "delay": 5.0,
+      "penalty": 5.5,
+      "faocc": 0.028994447871684145
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 318,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8846311760795028,
+      "miss": 0.16666666666666666,
+      "delay": 4.6,
+      "penalty": 5.666666666666667,
+      "faocc": 0.02647783251231527
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 317,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.7267520573807374,
+      "miss": 0.0,
+      "delay": 5.333333333333333,
+      "penalty": 5.333333333333333,
+      "faocc": 0.017879161528976572
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 312,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.734577284758137,
+      "miss": 0.16666666666666666,
+      "delay": 4.2,
+      "penalty": 5.333333333333333,
+      "faocc": 0.015995078437403876
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 328,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9019631401336929,
+      "miss": 0.25,
+      "delay": 6.444444444444445,
+      "penalty": 7.583333333333333,
+      "faocc": 0.018351477449455676
+     }
+    ],
+    "Change": [
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 26,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 1.547488379964502,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.11708371949335805
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 24,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 1.2902143366614747,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.10021718895439032
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 25,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 0.5265700856691652,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0
+     },
+     {
+      "packets": 28,
+      "bytes": 896,
+      "delivered": 25,
+      "airtime_ms": 28.0,
+      "energy_uj": 840.0,
+      "rmse": 1.4723413252766346,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.10803324099722991
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 27,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 1.7572218734209655,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.2088116661495501
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 27,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 1.3718573367076303,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.10750382848392037
+     },
+     {
+      "packets": 35,
+      "bytes": 1120,
+      "delivered": 30,
+      "airtime_ms": 35.0,
+      "energy_uj": 1050.0,
+      "rmse": 0.6555404301824175,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 26,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 1.4003093505795192,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.11768368617683686
+     },
+     {
+      "packets": 28,
+      "bytes": 896,
+      "delivered": 25,
+      "airtime_ms": 28.0,
+      "energy_uj": 840.0,
+      "rmse": 0.980301638235114,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.055658627087198514
+     },
+     {
+      "packets": 28,
+      "bytes": 896,
+      "delivered": 25,
+      "airtime_ms": 28.0,
+      "energy_uj": 840.0,
+      "rmse": 1.2627659558661115,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.09190505173463177
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 29,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.6137927116979619,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.01928374655647383
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 26,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 1.7220418266963817,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.2006153846153846
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 24,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 0.535983120400208,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 28,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 0.3518247522636617,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.0
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 27,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 0.7452863658103602,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.030331166821417517
+     },
+     {
+      "packets": 31,
+      "bytes": 992,
+      "delivered": 30,
+      "airtime_ms": 31.0,
+      "energy_uj": 930.0,
+      "rmse": 0.39713938087484685,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.0
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 27,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 0.6086481694815176,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 29,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.6472116622916853,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.009110233829334954
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 26,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 1.3863431592206292,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.09673444239063463
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 26,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 1.0057067431460975,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0707196029776675
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 30,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.4578813565493599,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.0
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 26,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 0.9011125077579133,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.05760936537276648
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 27,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 1.0285751688883096,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.04935957513277101
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 29,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.4993011739098109,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 23,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 1.5959968760537857,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.14337899543378996
+     },
+     {
+      "packets": 26,
+      "bytes": 832,
+      "delivered": 21,
+      "airtime_ms": 26.0,
+      "energy_uj": 780.0,
+      "rmse": 0.8897258236302908,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.031153608883405307
+     },
+     {
+      "packets": 31,
+      "bytes": 992,
+      "delivered": 27,
+      "airtime_ms": 31.0,
+      "energy_uj": 930.0,
+      "rmse": 0.973875365433946,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.04772167487684729
+     },
+     {
+      "packets": 31,
+      "bytes": 992,
+      "delivered": 28,
+      "airtime_ms": 31.0,
+      "energy_uj": 930.0,
+      "rmse": 1.2467069203344616,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.12083847102342787
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 31,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.4237411633116111,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.0
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 25,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 1.8582088613797865,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.191601866251944
+     }
+    ],
+    "Hybrid": [
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 224,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.5250645436059099,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.004633920296570899
+     },
+     {
+      "packets": 249,
+      "bytes": 7968,
+      "delivered": 217,
+      "airtime_ms": 249.0,
+      "energy_uj": 7470.0,
+      "rmse": 0.4915904188969476,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.013962147067949116
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 229,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.36541646932176547,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0
+     },
+     {
+      "packets": 254,
+      "bytes": 8128,
+      "delivered": 225,
+      "airtime_ms": 254.0,
+      "energy_uj": 7620.0,
+      "rmse": 0.5011763467209572,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.009233610341643583
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 229,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.3899540733156921,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.00930809804529941
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 225,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.3907210982248024,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.009188361408882083
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 222,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.4109085983114449,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 218,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.7113041851743852,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.00933997509339975
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 226,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.44610996600608926,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.00927643784786642
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 224,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.4583202020624824,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.004564820450395618
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 230,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.4285269508535413,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.004591368227731864
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 226,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.6412609986928668,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.023076923076923078
+     },
+     {
+      "packets": 250,
+      "bytes": 8000,
+      "delivered": 226,
+      "airtime_ms": 250.0,
+      "energy_uj": 7500.0,
+      "rmse": 0.4298309405637709,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 236,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.28661472472513627,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.0
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 231,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.4105830935979673,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.009285051067780872
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 232,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.24695313224188567,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.0
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 229,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.4026859660207368,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0
+     },
+     {
+      "packets": 249,
+      "bytes": 7968,
+      "delivered": 221,
+      "airtime_ms": 249.0,
+      "energy_uj": 7470.0,
+      "rmse": 0.5374269296873645,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.004555116914667477
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 224,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.41571727630761,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.0046210720887245845
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 223,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.4310768971239791,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.004652605459057072
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 228,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.3184901427915264,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.0
+     },
+     {
+      "packets": 254,
+      "bytes": 8128,
+      "delivered": 226,
+      "airtime_ms": 254.0,
+      "energy_uj": 7620.0,
+      "rmse": 0.3923207373967122,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.0046210720887245845
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 229,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.5834960563897753,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.00937207122774133
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 228,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.47971467167401416,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0046168051708217915
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 228,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.5773499443539991,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0091324200913242
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 222,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.6420332847658031,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.013880320789636027
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 222,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.5035587503919308,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.009236453201970444
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 221,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.4083465785564808,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.009247842170160296
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 229,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.28509348641418203,
+      "miss": 0.08333333333333333,
+      "delay": 0.0,
+      "penalty": 0.9166666666666666,
+      "faocc": 0.0
+     },
+     {
+      "packets": 250,
+      "bytes": 8000,
+      "delivered": 228,
+      "airtime_ms": 250.0,
+      "energy_uj": 7500.0,
+      "rmse": 0.40692580777930437,
+      "miss": 0.0,
+      "delay": 0.0,
+      "penalty": 0.0,
+      "faocc": 0.00933125972006221
+     }
+    ]
+   }
+  },
+  "0.3": {
+   "summary": {
+    "Periodic": {
+     "packets": {
+      "mean": 360.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "bytes": {
+      "mean": 11520.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "delivered": {
+      "mean": 249.43333333333334,
+      "half": 3.5037978710691213,
+      "n": 30
+     },
+     "airtime_ms": {
+      "mean": 360.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "energy_uj": {
+      "mean": 10800.0,
+      "half": 0.0,
+      "n": 30
+     },
+     "rmse": {
+      "mean": 0.9525363749932987,
+      "half": 0.026930241405874824,
+      "n": 30
+     },
+     "miss": {
+      "mean": 0.29999999999999993,
+      "half": 0.048067800867388835,
+      "n": 30
+     },
+     "penalty": {
+      "mean": 6.67222222222222,
+      "half": 0.414747248431942,
+      "n": 30
+     },
+     "faocc": {
+      "mean": 0.030181529966380363,
+      "half": 0.0027462715764480614,
+      "n": 30
+     },
+     "delay": {
+      "mean": 4.786626984126984,
+      "half": 0.4671314573572323,
+      "n": 30
+     }
+    },
+    "Change": {
+     "packets": {
+      "mean": 29.733333333333334,
+      "half": 0.7962509550573074,
+      "n": 30
+     },
+     "bytes": {
+      "mean": 951.4666666666667,
+      "half": 25.480030561833836,
+      "n": 30
+     },
+     "delivered": {
+      "mean": 21.333333333333332,
+      "half": 0.9822455510769055,
+      "n": 30
+     },
+     "airtime_ms": {
+      "mean": 29.733333333333334,
+      "half": 0.7962509550573074,
+      "n": 30
+     },
+     "energy_uj": {
+      "mean": 892.0,
+      "half": 23.887528651719222,
+      "n": 30
+     },
+     "rmse": {
+      "mean": 1.6398662782480429,
+      "half": 0.18667925677061456,
+      "n": 30
+     },
+     "miss": {
+      "mean": 0.30277777777777776,
+      "half": 0.041251934684979986,
+      "n": 30
+     },
+     "penalty": {
+      "mean": 3.3305555555555553,
+      "half": 0.4537712815347798,
+      "n": 30
+     },
+     "faocc": {
+      "mean": 0.16743175842486444,
+      "half": 0.04004772824939107,
+      "n": 30
+     },
+     "delay": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     }
+    },
+    "Hybrid": {
+     "packets": {
+      "mean": 251.73333333333332,
+      "half": 0.4797323934379495,
+      "n": 30
+     },
+     "bytes": {
+      "mean": 8055.466666666666,
+      "half": 15.351436590014384,
+      "n": 30
+     },
+     "delivered": {
+      "mean": 176.63333333333333,
+      "half": 2.6303153475144323,
+      "n": 30
+     },
+     "airtime_ms": {
+      "mean": 251.73333333333332,
+      "half": 0.4797323934379495,
+      "n": 30
+     },
+     "energy_uj": {
+      "mean": 7552.0,
+      "half": 14.391971803138489,
+      "n": 30
+     },
+     "rmse": {
+      "mean": 0.8005184038156801,
+      "half": 0.06476452166227034,
+      "n": 30
+     },
+     "miss": {
+      "mean": 0.30277777777777776,
+      "half": 0.041251934684979986,
+      "n": 30
+     },
+     "penalty": {
+      "mean": 3.3305555555555553,
+      "half": 0.4537712815347798,
+      "n": 30
+     },
+     "faocc": {
+      "mean": 0.022684676004171657,
+      "half": 0.005207590774426457,
+      "n": 30
+     },
+     "delay": {
+      "mean": 0.0,
+      "half": 0.0,
+      "n": 30
+     }
+    }
+   },
+   "raw": {
+    "Periodic": [
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 245,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 1.0570353079185137,
+      "miss": 0.25,
+      "delay": 3.2222222222222223,
+      "penalty": 5.166666666666667,
+      "faocc": 0.04417670682730924
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 253,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8967310951955265,
+      "miss": 0.3333333333333333,
+      "delay": 5.0,
+      "penalty": 7.0,
+      "faocc": 0.014582686937635743
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 230,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9553828550286897,
+      "miss": 0.3333333333333333,
+      "delay": 5.25,
+      "penalty": 7.166666666666667,
+      "faocc": 0.021478981282602026
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 247,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8483630908171602,
+      "miss": 0.08333333333333333,
+      "delay": 5.909090909090909,
+      "penalty": 6.333333333333333,
+      "faocc": 0.029855340104647583
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 237,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9840091779071762,
+      "miss": 0.25,
+      "delay": 6.222222222222222,
+      "penalty": 7.416666666666667,
+      "faocc": 0.03195780328886131
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 243,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9247357292256644,
+      "miss": 0.3333333333333333,
+      "delay": 5.5,
+      "penalty": 7.333333333333333,
+      "faocc": 0.022970903522205207
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 236,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9967787526014373,
+      "miss": 0.25,
+      "delay": 6.222222222222222,
+      "penalty": 7.416666666666667,
+      "faocc": 0.03841463414634146
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 241,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 1.0019238376890909,
+      "miss": 0.3333333333333333,
+      "delay": 4.25,
+      "penalty": 6.5,
+      "faocc": 0.035803237858032376
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 251,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 1.0379200807069955,
+      "miss": 0.5833333333333334,
+      "delay": 3.6,
+      "penalty": 7.916666666666667,
+      "faocc": 0.025355596784168214
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 246,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8975995376989283,
+      "miss": 0.25,
+      "delay": 7.0,
+      "penalty": 8.0,
+      "faocc": 0.023737066342057214
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 251,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8837289561362166,
+      "miss": 0.16666666666666666,
+      "delay": 7.0,
+      "penalty": 7.666666666666667,
+      "faocc": 0.024181205999387816
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 258,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 1.0405958440669114,
+      "miss": 0.3333333333333333,
+      "delay": 4.25,
+      "penalty": 6.5,
+      "faocc": 0.048
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 256,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 1.0210516519043111,
+      "miss": 0.3333333333333333,
+      "delay": 5.0,
+      "penalty": 7.0,
+      "faocc": 0.039197530864197534
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 266,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8756287914602724,
+      "miss": 0.25,
+      "delay": 3.6666666666666665,
+      "penalty": 5.5,
+      "faocc": 0.026097635861221984
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 264,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.894983119462433,
+      "miss": 0.4166666666666667,
+      "delay": 2.142857142857143,
+      "penalty": 5.833333333333333,
+      "faocc": 0.02321262766945218
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 268,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.909279810234151,
+      "miss": 0.16666666666666666,
+      "delay": 4.6,
+      "penalty": 5.666666666666667,
+      "faocc": 0.03093102381688834
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 247,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8721183518089402,
+      "miss": 0.08333333333333333,
+      "delay": 3.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.0358814352574103
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 257,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8319519036808045,
+      "miss": 0.08333333333333333,
+      "delay": 5.090909090909091,
+      "penalty": 5.583333333333333,
+      "faocc": 0.021257212268448223
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 249,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9607752526072494,
+      "miss": 0.16666666666666666,
+      "delay": 4.8,
+      "penalty": 5.833333333333333,
+      "faocc": 0.03789279112754159
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 257,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9089892237836528,
+      "miss": 0.16666666666666666,
+      "delay": 4.4,
+      "penalty": 5.5,
+      "faocc": 0.03535980148883375
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 242,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9693507557230985,
+      "miss": 0.4166666666666667,
+      "delay": 3.0,
+      "penalty": 6.333333333333333,
+      "faocc": 0.029547553093259463
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 255,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 1.0061972928251712,
+      "miss": 0.5,
+      "delay": 5.0,
+      "penalty": 8.0,
+      "faocc": 0.025261860751694395
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 240,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.8528447082546724,
+      "miss": 0.16666666666666666,
+      "delay": 4.8,
+      "penalty": 5.833333333333333,
+      "faocc": 0.02936582318025617
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 250,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9457155379503238,
+      "miss": 0.4166666666666667,
+      "delay": 5.428571428571429,
+      "penalty": 7.75,
+      "faocc": 0.02646968297937827
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 242,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.864901817043335,
+      "miss": 0.3333333333333333,
+      "delay": 3.375,
+      "penalty": 5.916666666666667,
+      "faocc": 0.029223744292237442
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 259,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 1.0890195888855065,
+      "miss": 0.4166666666666667,
+      "delay": 5.285714285714286,
+      "penalty": 7.666666666666667,
+      "faocc": 0.03824799506477483
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 244,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 1.035854579914117,
+      "miss": 0.3333333333333333,
+      "delay": 3.75,
+      "penalty": 6.166666666666667,
+      "faocc": 0.029556650246305417
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 247,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9863363618364184,
+      "miss": 0.3333333333333333,
+      "delay": 6.0,
+      "penalty": 7.666666666666667,
+      "faocc": 0.03329223181257707
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 240,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 0.9722918857475366,
+      "miss": 0.4166666666666667,
+      "delay": 4.0,
+      "penalty": 6.916666666666667,
+      "faocc": 0.02645339895416795
+     },
+     {
+      "packets": 360,
+      "bytes": 11520,
+      "delivered": 262,
+      "airtime_ms": 360.0,
+      "energy_uj": 10800.0,
+      "rmse": 1.0539963516846578,
+      "miss": 0.5,
+      "delay": 6.833333333333333,
+      "penalty": 8.916666666666666,
+      "faocc": 0.027682737169517885
+     }
+    ],
+    "Change": [
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 20,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 2.178234491237574,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.3456904541241891
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 18,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 2.440661267704941,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.33695314923983866
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 22,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 0.7502305123826549,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.013194231359312672
+     },
+     {
+      "packets": 28,
+      "bytes": 896,
+      "delivered": 19,
+      "airtime_ms": 28.0,
+      "energy_uj": 840.0,
+      "rmse": 1.7160004791712868,
+      "miss": 0.4166666666666667,
+      "delay": 0.0,
+      "penalty": 4.583333333333333,
+      "faocc": 0.14342874730686364
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 21,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 1.9819708850672573,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.2336332609370152
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 22,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 1.3155697214217503,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.10260336906584992
+     },
+     {
+      "packets": 35,
+      "bytes": 1120,
+      "delivered": 24,
+      "airtime_ms": 35.0,
+      "energy_uj": 1050.0,
+      "rmse": 1.234887795985003,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.051524390243902436
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 19,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 2.180844566350244,
+      "miss": 0.5833333333333334,
+      "delay": 0.0,
+      "penalty": 6.416666666666667,
+      "faocc": 0.2487546699875467
+     },
+     {
+      "packets": 28,
+      "bytes": 896,
+      "delivered": 20,
+      "airtime_ms": 28.0,
+      "energy_uj": 840.0,
+      "rmse": 1.9405596921781247,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.20810142238713666
+     },
+     {
+      "packets": 28,
+      "bytes": 896,
+      "delivered": 20,
+      "airtime_ms": 28.0,
+      "energy_uj": 840.0,
+      "rmse": 1.7755495442579088,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.21606816798539258
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 25,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 1.1576436811489734,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.05723905723905724
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 21,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 2.1864726649052573,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.30646153846153845
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 20,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 2.071289560732315,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.2774691358024691
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 22,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 1.3927051198672913,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.1329444273871661
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 23,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 1.4979777965720467,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.09285051067780872
+     },
+     {
+      "packets": 31,
+      "bytes": 992,
+      "delivered": 24,
+      "airtime_ms": 31.0,
+      "energy_uj": 930.0,
+      "rmse": 1.541750412268752,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.1265078874110733
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 23,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 0.8154794830033248,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.0
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 25,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.6305388165544925,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.009110233829334954
+     },
+     {
+      "packets": 30,
+      "bytes": 960,
+      "delivered": 18,
+      "airtime_ms": 30.0,
+      "energy_uj": 900.0,
+      "rmse": 2.524930698282427,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.4004929143561306
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 21,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 1.4923293988554502,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.14795285359801488
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 27,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 0.6474909041364157,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.0
+     },
+     {
+      "packets": 29,
+      "bytes": 928,
+      "delivered": 21,
+      "airtime_ms": 29.0,
+      "energy_uj": 870.0,
+      "rmse": 1.984734400486096,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.2720271102895872
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 17,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 1.9967703627676883,
+      "miss": 0.5833333333333334,
+      "delay": 0.0,
+      "penalty": 6.416666666666667,
+      "faocc": 0.232427366447985
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 22,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 1.649247876436697,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.12619267466912895
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 20,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 1.4517332697274343,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.08797564687975647
+     },
+     {
+      "packets": 26,
+      "bytes": 832,
+      "delivered": 16,
+      "airtime_ms": 26.0,
+      "energy_uj": 780.0,
+      "rmse": 1.8296131388866714,
+      "miss": 0.5,
+      "delay": 0.0,
+      "penalty": 5.5,
+      "faocc": 0.2146822948797039
+     },
+     {
+      "packets": 31,
+      "bytes": 992,
+      "delivered": 23,
+      "airtime_ms": 31.0,
+      "energy_uj": 930.0,
+      "rmse": 1.673976692443749,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.12530788177339902
+     },
+     {
+      "packets": 31,
+      "bytes": 992,
+      "delivered": 19,
+      "airtime_ms": 31.0,
+      "energy_uj": 930.0,
+      "rmse": 1.5256974655433613,
+      "miss": 0.4166666666666667,
+      "delay": 0.0,
+      "penalty": 4.583333333333333,
+      "faocc": 0.14765721331689272
+     },
+     {
+      "packets": 32,
+      "bytes": 1024,
+      "delivered": 26,
+      "airtime_ms": 32.0,
+      "energy_uj": 960.0,
+      "rmse": 1.6496115014987422,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.17410027683789603
+     },
+     {
+      "packets": 27,
+      "bytes": 864,
+      "delivered": 22,
+      "airtime_ms": 27.0,
+      "energy_uj": 810.0,
+      "rmse": 1.9614861475673566,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.191601866251944
+     }
+    ],
+    "Hybrid": [
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 174,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.9042440691375095,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.027803521779425393
+     },
+     {
+      "packets": 249,
+      "bytes": 7968,
+      "delivered": 171,
+      "airtime_ms": 249.0,
+      "energy_uj": 7470.0,
+      "rmse": 0.9434523613016479,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.032578343158547934
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 171,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.6937017652952748,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.0046026388462718625
+     },
+     {
+      "packets": 254,
+      "bytes": 8128,
+      "delivered": 173,
+      "airtime_ms": 254.0,
+      "energy_uj": 7620.0,
+      "rmse": 1.1183301663903027,
+      "miss": 0.4166666666666667,
+      "delay": 0.0,
+      "penalty": 4.583333333333333,
+      "faocc": 0.050784856879039705
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 170,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.7225017770681346,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.01861619609059882
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 179,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.7584519295947171,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.022970903522205207
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 180,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.7628542786770236,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.018292682926829267
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 173,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 1.1833771127325619,
+      "miss": 0.5833333333333334,
+      "delay": 0.0,
+      "penalty": 6.416666666666667,
+      "faocc": 0.04202988792029888
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 180,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.800862274946383,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.023191094619666047
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 167,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.741159474901633,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.018259281801582473
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 178,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.747302578991957,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.018365472910927456
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 181,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.8231735428818859,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.036923076923076927
+     },
+     {
+      "packets": 250,
+      "bytes": 8000,
+      "delivered": 168,
+      "airtime_ms": 250.0,
+      "energy_uj": 7500.0,
+      "rmse": 0.7829209445402565,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.023148148148148147
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 183,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.6229108748669441,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.0092109303039607
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 192,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.7299903167540145,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.013927576601671309
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 196,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.5006738956327542,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.0046396535725332505
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 176,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.6176977901762865,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.0046801872074883
+     },
+     {
+      "packets": 249,
+      "bytes": 7968,
+      "delivered": 174,
+      "airtime_ms": 249.0,
+      "energy_uj": 7470.0,
+      "rmse": 0.5735434482026011,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.004555116914667477
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 176,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.8980247398525114,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.036968576709796676
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 168,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.8275602395945032,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.03722084367245657
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 182,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.5848367421289917,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.0
+     },
+     {
+      "packets": 254,
+      "bytes": 8128,
+      "delivered": 177,
+      "airtime_ms": 254.0,
+      "energy_uj": 7620.0,
+      "rmse": 0.8845830611316426,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.041589648798521256
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 162,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 1.1979371095543918,
+      "miss": 0.5833333333333334,
+      "delay": 0.0,
+      "penalty": 6.416666666666667,
+      "faocc": 0.05154639175257732
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 180,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.691121153758048,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.013850415512465374
+     },
+     {
+      "packets": 253,
+      "bytes": 8096,
+      "delivered": 172,
+      "airtime_ms": 253.0,
+      "energy_uj": 7590.0,
+      "rmse": 0.8600440638511303,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.0228310502283105
+     },
+     {
+      "packets": 252,
+      "bytes": 8064,
+      "delivered": 179,
+      "airtime_ms": 252.0,
+      "energy_uj": 7560.0,
+      "rmse": 0.8880185352738207,
+      "miss": 0.5,
+      "delay": 0.0,
+      "penalty": 5.5,
+      "faocc": 0.02313386798272671
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 181,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.760068577621399,
+      "miss": 0.3333333333333333,
+      "delay": 0.0,
+      "penalty": 3.6666666666666665,
+      "faocc": 0.013854679802955665
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 174,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.9427282797854203,
+      "miss": 0.4166666666666667,
+      "delay": 0.0,
+      "penalty": 4.583333333333333,
+      "faocc": 0.027743526510480888
+     },
+     {
+      "packets": 251,
+      "bytes": 8032,
+      "delivered": 180,
+      "airtime_ms": 251.0,
+      "energy_uj": 7530.0,
+      "rmse": 0.5309032126982978,
+      "miss": 0.16666666666666666,
+      "delay": 0.0,
+      "penalty": 1.8333333333333333,
+      "faocc": 0.009227929867733005
+     },
+     {
+      "packets": 250,
+      "bytes": 8000,
+      "delivered": 182,
+      "airtime_ms": 250.0,
+      "energy_uj": 7500.0,
+      "rmse": 0.9225777971283566,
+      "miss": 0.25,
+      "delay": 0.0,
+      "penalty": 2.75,
+      "faocc": 0.027993779160186624
+     }
+    ]
+   }
+  }
+ },
+ "paired_p0.1": {
+  "bytes": {
+   "mean": -3464.5333333333333,
+   "half": 15.351436590014384,
+   "n": 30
+  },
+  "rmse": {
+   "mean": -0.3333088045887565,
+   "half": 0.045102864194515604,
+   "n": 30
+  },
+  "miss": {
+   "mean": 0.011111111111111108,
+   "half": 0.04603350577907563,
+   "n": 30
+  },
+  "penalty": {
+   "mean": -4.022222222222222,
+   "half": 0.5143630770024649,
+   "n": 30
+  }
+ },
+ "sweep": {
+  "Periodic:2": {
+   "packets": {
+    "mean": 1800.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 57600.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 1619.7333333333333,
+    "half": 5.385280370616429,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 1800.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 54000.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.28634616772884225,
+    "half": 0.013545851805060108,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 0.7638888888888887,
+    "half": 0.09567721649734327,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.0029468729542670197,
+    "half": 0.0004780690422639382,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.7638888888888887,
+    "half": 0.09567721649734327,
+    "n": 30
+   }
+  },
+  "Periodic:5": {
+   "packets": {
+    "mean": 720.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 23040.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 647.9333333333333,
+    "half": 3.197057618147352,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 720.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 21600.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.5290475222515597,
+    "half": 0.01766376683282147,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.01111111111111111,
+    "half": 0.010758636848233999,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 2.683333333333333,
+    "half": 0.2421934353887709,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.00916523439836881,
+    "half": 0.0008155896268735881,
+    "n": 30
+   },
+   "delay": {
+    "mean": 2.5853535353535353,
+    "half": 0.24805788270061394,
+    "n": 30
+   }
+  },
+  "Periodic:10": {
+   "packets": {
+    "mean": 360.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 11520.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 323.23333333333335,
+    "half": 2.1920218658040476,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 360.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 10800.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.7839278803210584,
+    "half": 0.019579765435005895,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.10833333333333332,
+    "half": 0.03283994849153603,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 5.336111111111112,
+    "half": 0.3966873853835671,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.02102819752694899,
+    "half": 0.0016287440080656908,
+    "n": 30
+   },
+   "delay": {
+    "mean": 4.62486531986532,
+    "half": 0.4301956234006958,
+    "n": 30
+   }
+  },
+  "Periodic:15": {
+   "packets": {
+    "mean": 240.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 7680.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 215.5,
+    "half": 1.6835435563734964,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 240.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 7200.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.9613564346627558,
+    "half": 0.03326199886570914,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.3722222222222222,
+    "half": 0.04603350577907565,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 7.03888888888889,
+    "half": 0.44890726498334005,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.031348732948885606,
+    "half": 0.0032152919799968826,
+    "n": 30
+   },
+   "delay": {
+    "mean": 4.75002886002886,
+    "half": 0.4908036648760703,
+    "n": 30
+   }
+  },
+  "Periodic:20": {
+   "packets": {
+    "mean": 180.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 5760.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 161.16666666666666,
+    "half": 1.4314368425866912,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 180.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 5400.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.1156263201510164,
+    "half": 0.03311733040862951,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.5027777777777778,
+    "half": 0.050030553367376,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 8.200000000000001,
+    "half": 0.40634333098514425,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.04348260336603523,
+    "half": 0.004422617360784991,
+    "n": 30
+   },
+   "delay": {
+    "mean": 5.41090909090909,
+    "half": 0.43527314854760013,
+    "n": 30
+   }
+  },
+  "Periodic:30": {
+   "packets": {
+    "mean": 120.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 3840.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 107.7,
+    "half": 1.1567487938207024,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 120.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 3600.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.305168522912539,
+    "half": 0.03992278727269387,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.6888888888888888,
+    "half": 0.046895810791704955,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 8.966666666666669,
+    "half": 0.3910173356418798,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.05946710591334551,
+    "half": 0.005449241567667821,
+    "n": 30
+   },
+   "delay": {
+    "mean": 4.380870279146142,
+    "half": 0.7999444716750346,
+    "n": 29
+   }
+  },
+  "Periodic:60": {
+   "packets": {
+    "mean": 60.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 1920.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 53.93333333333333,
+    "half": 0.8930216968517859,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 60.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 1800.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.5375049151664626,
+    "half": 0.057735202373952625,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.8527777777777779,
+    "half": 0.03532184537589146,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 10.091666666666665,
+    "half": 0.2596193735293362,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.08005956448258475,
+    "half": 0.013138687349937148,
+    "n": 30
+   },
+   "delay": {
+    "mean": 4.884615384615385,
+    "half": 1.0307403628233562,
+    "n": 26
+   }
+  },
+  "Change:0.2": {
+   "packets": {
+    "mean": 113.4,
+    "half": 2.903341909453982,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 3628.8,
+    "half": 92.90694110252743,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 102.16666666666667,
+    "half": 2.7335765940065486,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 113.4,
+    "half": 2.903341909453982,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 3402.0,
+    "half": 87.10025728361946,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.6206849767733034,
+    "half": 0.06414804661455925,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11388888888888889,
+    "half": 0.02887230704347188,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3,
+    "half": 0.3069150206804973,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.01802030673430881,
+    "half": 0.005793919333643835,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.04924242424242424,
+    "half": 0.06998445464938995,
+    "n": 30
+   }
+  },
+  "Change:0.4": {
+   "packets": {
+    "mean": 37.333333333333336,
+    "half": 1.14077459110335,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 1194.6666666666667,
+    "half": 36.5047869153072,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 33.56666666666667,
+    "half": 1.254583814352511,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 37.333333333333336,
+    "half": 1.14077459110335,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 1120.0,
+    "half": 34.2232377331005,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.9419281343151785,
+    "half": 0.15469409523491712,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.056456220943439335,
+    "half": 0.020746643401836747,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Change:0.5": {
+   "packets": {
+    "mean": 29.733333333333334,
+    "half": 0.7962509550573074,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 951.4666666666667,
+    "half": 25.480030561833836,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 26.633333333333333,
+    "half": 0.8463051859299066,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 29.733333333333334,
+    "half": 0.7962509550573074,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 892.0,
+    "half": 23.887528651719222,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.0051237940565385,
+    "half": 0.1713169061244152,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.06584517144143269,
+    "half": 0.024294957370089458,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Change:0.6": {
+   "packets": {
+    "mean": 26.7,
+    "half": 0.4615134000187588,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 854.4,
+    "half": 14.768428800600281,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 23.766666666666666,
+    "half": 0.5251849351878326,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 26.7,
+    "half": 0.4615134000187588,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 801.0,
+    "half": 13.845402000562764,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.0193748404106133,
+    "half": 0.1680685064364146,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.06821444545272827,
+    "half": 0.024065917101024768,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Change:0.8": {
+   "packets": {
+    "mean": 25.233333333333334,
+    "half": 0.1606329972040071,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 807.4666666666667,
+    "half": 5.140255910528227,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 22.5,
+    "half": 0.4573272509406291,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 25.233333333333334,
+    "half": 0.1606329972040071,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 757.0,
+    "half": 4.818989916120213,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.0581872044317993,
+    "half": 0.18277196311376656,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.0775428789661287,
+    "half": 0.02960079000842764,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Change:1.2": {
+   "packets": {
+    "mean": 25.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 800.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 22.3,
+    "half": 0.4615134000187588,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 25.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 750.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.0588961732587772,
+    "half": 0.18266066278900067,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.0775428789661287,
+    "half": 0.02960079000842764,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Hybrid:5": {
+   "packets": {
+    "mean": 729.9333333333333,
+    "half": 0.4896521001421395,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 23357.866666666665,
+    "half": 15.668867204548464,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 656.9666666666667,
+    "half": 2.8915325186405187,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 729.9333333333333,
+    "half": 0.4896521001421395,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 21898.0,
+    "half": 14.689563004264183,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.25648243979670493,
+    "half": 0.02091758657275482,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 0.6111111111111113,
+    "half": 0.14579991217202856,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.0022112656347725457,
+    "half": 0.0006718947440406882,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.6111111111111113,
+    "half": 0.14579991217202856,
+    "n": 30
+   }
+  },
+  "Hybrid:10": {
+   "packets": {
+    "mean": 371.3333333333333,
+    "half": 0.5575999032791324,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 11882.666666666666,
+    "half": 17.84319690493224,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 334.8,
+    "half": 1.9695426823212778,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 371.3333333333333,
+    "half": 0.5575999032791324,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 11140.0,
+    "half": 16.727997098373972,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.36645114265631734,
+    "half": 0.029540042772244413,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.016666666666666666,
+    "half": 0.012659653668185434,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.2111111111111112,
+    "half": 0.2812720042588562,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.004113364451938531,
+    "half": 0.001146678937277379,
+    "n": 30
+   },
+   "delay": {
+    "mean": 1.037878787878788,
+    "half": 0.2923952104687883,
+    "n": 30
+   }
+  },
+  "Hybrid:15": {
+   "packets": {
+    "mean": 251.73333333333332,
+    "half": 0.4797323934379495,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 8055.466666666666,
+    "half": 15.351436590014384,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 225.93333333333334,
+    "half": 1.5564682513215067,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 251.73333333333332,
+    "half": 0.4797323934379495,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 7552.0,
+    "half": 14.391971803138489,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.45061907573230214,
+    "half": 0.04034553947575704,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.006324258394911091,
+    "half": 0.0020037185644744995,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Hybrid:30": {
+   "packets": {
+    "mean": 131.93333333333334,
+    "half": 0.4486592690828884,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 4221.866666666667,
+    "half": 14.357096610652428,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 118.53333333333333,
+    "half": 1.1212194354146099,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 131.93333333333334,
+    "half": 0.4486592690828884,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 3958.0,
+    "half": 13.45977807248665,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.6006605584228665,
+    "half": 0.051092027581543444,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.0127862643003745,
+    "half": 0.004269845707658484,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Hybrid:60": {
+   "packets": {
+    "mean": 73.66666666666667,
+    "half": 0.40826156350841664,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 2357.3333333333335,
+    "half": 13.064370032269332,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 65.96666666666667,
+    "half": 0.9975453642161197,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 73.66666666666667,
+    "half": 0.40826156350841664,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 2210.0,
+    "half": 12.247846905252503,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.7154840100947728,
+    "half": 0.07631656540105439,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.022680952807292116,
+    "half": 0.007835533779321344,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  }
+ },
+ "high_events": {
+  "Periodic": {
+   "packets": {
+    "mean": 360.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 11520.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 323.23333333333335,
+    "half": 2.1920218658040476,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 360.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 10800.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.342863812919552,
+    "half": 0.03611122027706109,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.09074074074074075,
+    "half": 0.017848110800445235,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 5.167592592592593,
+    "half": 0.22078042082346927,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.08119885607881173,
+    "half": 0.00516960320708358,
+    "n": 30
+   },
+   "delay": {
+    "mean": 4.58724692009645,
+    "half": 0.20395237293152346,
+    "n": 30
+   }
+  },
+  "Change": {
+   "packets": {
+    "mean": 74.6,
+    "half": 0.38731092653642407,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 2387.2,
+    "half": 12.39394964916557,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 67.03333333333333,
+    "half": 0.9119345294760486,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 74.6,
+    "half": 0.38731092653642407,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 2238.0,
+    "half": 11.61932779609272,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.2294871146935764,
+    "half": 0.08032270919994519,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.09814814814814815,
+    "half": 0.015344501926358545,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.0796296296296295,
+    "half": 0.16878952118994398,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.0991584907488133,
+    "half": 0.016347914422066186,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Hybrid": {
+   "packets": {
+    "mean": 275.1333333333333,
+    "half": 0.8533771030773759,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 8804.266666666666,
+    "half": 27.30806729847603,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 246.93333333333334,
+    "half": 1.9586084005685573,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 275.1333333333333,
+    "half": 0.8533771030773759,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 8254.0,
+    "half": 25.60131309232127,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.7354093064822782,
+    "half": 0.039042564992536964,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.09814814814814815,
+    "half": 0.015344501926358545,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.0796296296296295,
+    "half": 0.16878952118994398,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.02550304236991463,
+    "half": 0.004515465264732624,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  }
+ },
+ "short_events": {
+  "Periodic": {
+   "packets": {
+    "mean": 360.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 11520.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 323.23333333333335,
+    "half": 2.1920218658040476,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 360.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 10800.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.5934693067112329,
+    "half": 0.02445448469267034,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.6222222222222221,
+    "half": 0.06472400550059874,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 7.561111111111111,
+    "half": 0.5797313587485845,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.01120486422708747,
+    "half": 0.002175755508384498,
+    "n": 30
+   },
+   "delay": {
+    "mean": 1.8092460317460317,
+    "half": 0.24203213217668373,
+    "n": 30
+   }
+  },
+  "Change": {
+   "packets": {
+    "mean": 29.9,
+    "half": 0.7927207858664551,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 956.8,
+    "half": 25.367065147726564,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 27.1,
+    "half": 0.9872095012211318,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 29.9,
+    "half": 0.7927207858664551,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 897.0,
+    "half": 23.78162357599365,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.8351810265304179,
+    "half": 0.1945186714421492,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.055440628332915416,
+    "half": 0.021900624929775264,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Hybrid": {
+   "packets": {
+    "mean": 254.5,
+    "half": 0.3636208679018309,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 8144.0,
+    "half": 11.635867772858589,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 229.53333333333333,
+    "half": 1.613497568246703,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 254.5,
+    "half": 0.3636208679018309,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 7635.0,
+    "half": 10.908626037054926,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.3045473185892471,
+    "half": 0.0352355403876546,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.003947717676899086,
+    "half": 0.0013717635422634902,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  }
+ },
+ "bursty": {
+  "Periodic": {
+   "packets": {
+    "mean": 360.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 11520.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 251.96666666666667,
+    "half": 3.6618800475719033,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 360.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 10800.0,
+    "half": 0.0,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.9786873701550125,
+    "half": 0.03315048930924634,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.3083333333333333,
+    "half": 0.045608441221628535,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 6.627777777777777,
+    "half": 0.428120754611073,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.031496261569345395,
+    "half": 0.0028938995814195454,
+    "n": 30
+   },
+   "delay": {
+    "mean": 4.684082491582491,
+    "half": 0.37872376599842,
+    "n": 30
+   }
+  },
+  "Change": {
+   "packets": {
+    "mean": 29.733333333333334,
+    "half": 0.7962509550573074,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 951.4666666666667,
+    "half": 25.480030561833836,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 20.933333333333334,
+    "half": 0.8712196689747232,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 29.733333333333334,
+    "half": 0.7962509550573074,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 892.0,
+    "half": 23.887528651719222,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.6658229080572904,
+    "half": 0.18463476087967035,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.30277777777777776,
+    "half": 0.05511151458851889,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 3.3305555555555557,
+    "half": 0.6062266604737075,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.18132243991324817,
+    "half": 0.04832482992973908,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Hybrid": {
+   "packets": {
+    "mean": 251.73333333333332,
+    "half": 0.4797323934379495,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 8055.466666666666,
+    "half": 15.351436590014384,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 176.96666666666667,
+    "half": 2.684592915726161,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 251.73333333333332,
+    "half": 0.4797323934379495,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 7552.0,
+    "half": 14.391971803138489,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.8204272023773211,
+    "half": 0.0536889875017357,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.30277777777777776,
+    "half": 0.05511151458851889,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 3.3305555555555557,
+    "half": 0.6062266604737075,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.024665137104255472,
+    "half": 0.0050347767021383895,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  }
+ },
+ "predictor": {
+  "Change:hold": {
+   "packets": {
+    "mean": 29.733333333333334,
+    "half": 0.7962509550573074,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 951.4666666666667,
+    "half": 25.480030561833836,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 26.633333333333333,
+    "half": 0.8463051859299066,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 29.733333333333334,
+    "half": 0.7962509550573074,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 892.0,
+    "half": 23.887528651719222,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.0051237940565385,
+    "half": 0.1713169061244152,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.06584517144143269,
+    "half": 0.024294957370089458,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Change:linear": {
+   "packets": {
+    "mean": 29.733333333333334,
+    "half": 0.7962509550573074,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 951.4666666666667,
+    "half": 25.480030561833836,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 26.633333333333333,
+    "half": 0.8463051859299066,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 29.733333333333334,
+    "half": 0.7962509550573074,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 892.0,
+    "half": 23.887528651719222,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 1.4786152475756509,
+    "half": 0.16282141047599888,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.06584517144143269,
+    "half": 0.024294957370089458,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Hybrid:hold": {
+   "packets": {
+    "mean": 251.73333333333332,
+    "half": 0.4797323934379495,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 8055.466666666666,
+    "half": 15.351436590014384,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 225.93333333333334,
+    "half": 1.5564682513215067,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 251.73333333333332,
+    "half": 0.4797323934379495,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 7552.0,
+    "half": 14.391971803138489,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.45061907573230214,
+    "half": 0.04034553947575704,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.006324258394911091,
+    "half": 0.0020037185644744995,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  },
+  "Hybrid:linear": {
+   "packets": {
+    "mean": 251.73333333333332,
+    "half": 0.4797323934379495,
+    "n": 30
+   },
+   "bytes": {
+    "mean": 8055.466666666666,
+    "half": 15.351436590014384,
+    "n": 30
+   },
+   "delivered": {
+    "mean": 225.93333333333334,
+    "half": 1.5564682513215067,
+    "n": 30
+   },
+   "airtime_ms": {
+    "mean": 251.73333333333332,
+    "half": 0.4797323934379495,
+    "n": 30
+   },
+   "energy_uj": {
+    "mean": 7552.0,
+    "half": 14.391971803138489,
+    "n": 30
+   },
+   "rmse": {
+    "mean": 0.5325724566428858,
+    "half": 0.035345284016732564,
+    "n": 30
+   },
+   "miss": {
+    "mean": 0.11944444444444444,
+    "half": 0.02793184270707984,
+    "n": 30
+   },
+   "penalty": {
+    "mean": 1.3138888888888889,
+    "half": 0.30725026977787817,
+    "n": 30
+   },
+   "faocc": {
+    "mean": 0.006324258394911091,
+    "half": 0.0020037185644744995,
+    "n": 30
+   },
+   "delay": {
+    "mean": 0.0,
+    "half": 0.0,
+    "n": 30
+   }
+  }
+ },
+ "matched": {
+  "period": 14,
+  "summary": {
+   "Periodic": {
+    "packets": {
+     "mean": 258.0,
+     "half": 0.0,
+     "n": 30
+    },
+    "bytes": {
+     "mean": 8256.0,
+     "half": 0.0,
+     "n": 30
+    },
+    "delivered": {
+     "mean": 233.23333333333332,
+     "half": 1.8571759394081615,
+     "n": 30
+    },
+    "airtime_ms": {
+     "mean": 258.0,
+     "half": 0.0,
+     "n": 30
+    },
+    "energy_uj": {
+     "mean": 7740.0,
+     "half": 0.0,
+     "n": 30
+    },
+    "rmse": {
+     "mean": 0.9106626728817326,
+     "half": 0.030168350179683043,
+     "n": 30
+    },
+    "miss": {
+     "mean": 0.2638888888888889,
+     "half": 0.05301164365488769,
+     "n": 30
+    },
+    "penalty": {
+     "mean": 6.708333333333331,
+     "half": 0.5286921315266083,
+     "n": 30
+    },
+    "faocc": {
+     "mean": 0.02979463323901747,
+     "half": 0.0023518932261677415,
+     "n": 30
+    },
+    "delay": {
+     "mean": 5.242480759980759,
+     "half": 0.4744503789818662,
+     "n": 30
+    }
+   },
+   "Hybrid": {
+    "packets": {
+     "mean": 251.73333333333332,
+     "half": 0.4797323934379495,
+     "n": 30
+    },
+    "bytes": {
+     "mean": 8055.466666666666,
+     "half": 15.351436590014384,
+     "n": 30
+    },
+    "delivered": {
+     "mean": 225.93333333333334,
+     "half": 1.5564682513215067,
+     "n": 30
+    },
+    "airtime_ms": {
+     "mean": 251.73333333333332,
+     "half": 0.4797323934379495,
+     "n": 30
+    },
+    "energy_uj": {
+     "mean": 7552.0,
+     "half": 14.391971803138489,
+     "n": 30
+    },
+    "rmse": {
+     "mean": 0.45061907573230214,
+     "half": 0.04034553947575704,
+     "n": 30
+    },
+    "miss": {
+     "mean": 0.11944444444444444,
+     "half": 0.02793184270707984,
+     "n": 30
+    },
+    "penalty": {
+     "mean": 1.3138888888888889,
+     "half": 0.30725026977787817,
+     "n": 30
+    },
+    "faocc": {
+     "mean": 0.006324258394911091,
+     "half": 0.0020037185644744995,
+     "n": 30
+    },
+    "delay": {
+     "mean": 0.0,
+     "half": 0.0,
+     "n": 30
+    }
+   }
+  },
+  "design_mean_packets": 252.2
+ },
+ "stress_lost_onset": {
+  "Periodic": {
+   "metrics": {
+    "packets": 8,
+    "bytes": 256,
+    "delivered": 8,
+    "airtime_ms": 8.0,
+    "energy_uj": 240.0,
+    "rmse": 1.0954451150103321,
+    "miss": 0.0,
+    "delay": 3.0,
+    "penalty": 3.0,
+    "faocc": 0.075
+   },
+   "first_above_alarm_delivery": 20
+  },
+  "Change": {
+   "metrics": {
+    "packets": 3,
+    "bytes": 96,
+    "delivered": 2,
+    "airtime_ms": 3.0,
+    "energy_uj": 90.0,
+    "rmse": 2.8284271247461903,
+    "miss": 1.0,
+    "delay": null,
+    "penalty": 11.0,
+    "faocc": 0.0
+   },
+   "first_above_alarm_delivery": null
+  },
+  "Hybrid": {
+   "metrics": {
+    "packets": 7,
+    "bytes": 224,
+    "delivered": 6,
+    "airtime_ms": 7.0,
+    "energy_uj": 210.0,
+    "rmse": 1.7320508075688772,
+    "miss": 1.0,
+    "delay": null,
+    "penalty": 11.0,
+    "faocc": 0.0
+   },
+   "first_above_alarm_delivery": 32
+  }
+ },
+ "stress_slow_drift": {
+  "Periodic": {
+   "metrics": {
+    "packets": 8,
+    "bytes": 256,
+    "delivered": 8,
+    "airtime_ms": 8.0,
+    "energy_uj": 240.0,
+    "rmse": 0.043588989435406664,
+    "miss": 0.0,
+    "delay": 5.0,
+    "penalty": 5.0,
+    "faocc": 0.0
+   },
+   "detected": true,
+   "delay": 5
+  },
+  "Change": {
+   "metrics": {
+    "packets": 1,
+    "bytes": 32,
+    "delivered": 1,
+    "airtime_ms": 1.0,
+    "energy_uj": 30.0,
+    "rmse": 0.28108915153579045,
+    "miss": 1.0,
+    "delay": null,
+    "penalty": 11.0,
+    "faocc": 0.0
+   },
+   "detected": false,
+   "delay": null
+  },
+  "Hybrid": {
+   "metrics": {
+    "packets": 6,
+    "bytes": 192,
+    "delivered": 6,
+    "airtime_ms": 6.0,
+    "energy_uj": 180.0,
+    "rmse": 0.05925462944877044,
+    "miss": 0.0,
+    "delay": 10.0,
+    "penalty": 10.0,
+    "faocc": 0.0
+   },
+   "detected": true,
+   "delay": 10
+  },
+  "onset": 35
+ }
+}
