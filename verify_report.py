@@ -6,7 +6,7 @@ from pathlib import Path
 import pymupdf
 
 HERE = Path(__file__).parent
-PDF = HERE / "Topic31_Semantic_Event_Reporting_Report_EN.pdf"
+PDF = HERE / "report" / "Topic31_Semantic_Event_Reporting_Report_EN.pdf"
 R = json.loads((HERE / "results.json").read_text())
 
 raw = PDF.read_bytes()
