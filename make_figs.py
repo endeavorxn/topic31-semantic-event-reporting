@@ -57,16 +57,25 @@ def fig_model():
                     arrowprops=dict(arrowstyle="-|>,head_width=0.22,"
                                     "head_length=0.5", color="#111111",
                                     lw=1.2, shrinkA=0, shrinkB=0))
-    # dashed no-feedback arc fully below the box row (negative rad bows it down)
-    ax.annotate("", xy=(centers[1], Y0 - 0.025), xytext=(centers[3], Y0 - 0.025),
-                arrowprops=dict(arrowstyle="-|>", color="#8a6d1a", lw=0.9,
-                                ls="--", connectionstyle="arc3,rad=-0.28"))
-    ax.text((centers[1] + centers[3]) / 2, 0.10,
-            "no feedback: sender state $(v,\\ \\tau)$ tracks its own attempts only",
-            ha="center", va="top", fontsize=6.5, color="#8a6d1a")
+    # dashed no-feedback curve below the box row: explicit parametric arc
+    # (deterministic geometry) + a short arrowhead segment at its left end
+    x_end, x_start = centers[1], centers[3]
+    hw = (x_start - x_end) / 2.0
+    xm = (x_start + x_end) / 2.0
+    t = (np.linspace(x_start, x_end, 60) - xm) / hw
+    arc_y = 0.29 - 0.075 * (1.0 - t ** 2)
+    arc_line, = ax.plot(np.linspace(x_start, x_end, 60), arc_y, ls="--",
+                        lw=0.9, color="#8a6d1a")
+    head_ann = ax.annotate("", xy=(x_end, 0.292), xytext=(x_end + 0.05, 0.242),
+                           arrowprops=dict(arrowstyle="-|>", color="#8a6d1a",
+                                           lw=0.9, ls="--", shrinkA=0,
+                                           shrinkB=0))
+    t_note = ax.text(0.008, -0.10,
+                     "no feedback: sender state $(v,\\ \\tau)$ tracks its own attempts only",
+                     ha="left", va="bottom", fontsize=6.5, color="#8a6d1a")
     ax.text(1 - 0.010, 0.985, "truth labels used only by offline evaluation",
             ha="right", va="top", fontsize=6.2, color="#777777")
-    ax.set_xlim(0, 1); ax.set_ylim(-0.03, 1.02)
+    ax.set_xlim(0, 1); ax.set_ylim(-0.16, 1.02)
     fig.tight_layout(pad=0.25)
 
     # validation: every box label must fit inside its rectangle
@@ -85,6 +94,19 @@ def fig_model():
                   f"(text x[{tb.x0:.0f},{tb.x1:.0f}] y[{tb.y0:.0f},{tb.y1:.0f}]"
                   f" vs box x[{px0:.0f},{px1:.0f}] y[{py0:.0f},{py1:.0f}])")
     print("fig1 box-fit validation:", "PASS" if ok else "FAIL")
+
+    # validation: the note text must not overlap the arc or its arrowhead
+    tb = t_note.get_window_extent(renderer)
+    ab = arc_line.get_window_extent(renderer)
+    hb = head_ann.get_window_extent(renderer)
+    ax0 = min(ab.x0, hb.x0); ax1 = max(ab.x1, hb.x1)
+    ay0 = min(ab.y0, hb.y0); ay1 = max(ab.y1, hb.y1)
+    no_overlap = (tb.x1 < ax0 - 6 or tb.x0 > ax1 + 6
+                  or tb.y1 < ay0 - 6 or tb.y0 > ay1 + 6)
+    print("fig1 arc/label no-overlap:",
+          "PASS" if no_overlap else
+          f"FAIL text=({tb.x0:.0f},{tb.x1:.0f},{tb.y0:.0f},{tb.y1:.0f}) "
+          f"arc=({ax0:.0f},{ax1:.0f},{ay0:.0f},{ay1:.0f})")
     fig.savefig(FIGS / "fig1_model.png", bbox_inches="tight")
     plt.close(fig)
 
