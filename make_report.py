@@ -198,9 +198,6 @@ Xuan Yu 23219950 &nbsp;&middot;&nbsp; Zhangyi Peng 23219928</p>
 <p style="font-size:9pt; text-align:center; margin:0 0 2pt 0">
 EEEN3008J Wireless Communications &mdash; Topic 31 &middot; Group research report
 &middot; 14 November 2026</p>
-<p style="font-size:8.5pt; text-align:center; font-style:italic; margin:0 0 8pt 0">
-Review draft: the named authors must verify sources, re-run the code and
-check all claims before submission.</p>
 """, gap=7)
 
 place(f"""
