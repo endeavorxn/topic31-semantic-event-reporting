@@ -307,7 +307,31 @@ table(
     widths=[17, 40, 43])
 
 place("""
-<h2>A. What Remains to Be Tested Here</h2>
+<h2>A. Challenges and Solutions in the Literature</h2>
+<p><b>Challenge 1 &mdash; freshness is not correctness.</b> Age of Information
+[2] measures how stale a received update is, yet a fresh wrong value is still
+wrong for a monitor. The literature responds with correctness-aware metrics:
+the Age of Incorrect Information combines error magnitude with its duration
+and yields an optimal randomized threshold policy [4]; version-age metrics
+count state versions to capture semantic obsolescence in Markov monitoring
+[5]. Limitation: these metrics are defined for abstract Markov sources and
+often assume the receiver error is observable by the scheduler.</p>
+<p><b>Challenge 2 &mdash; a sender without feedback cannot know what the
+receiver holds.</b> Much of the state-of-the-art sidesteps this by assuming
+perfect instantaneous ACK/NACK and state-dependent randomized policies with
+closed forms [5], or by casting scheduling as a CMDP/POMDP over partially
+observed sources with sampling costs [6] [7]. Limitation: acknowledgement
+feedback is rarely free on low-power links, and the optimal policies are
+source-model specific.</p>
+<p><b>Challenge 3 &mdash; alarm-class tasks impose deadlines.</b>
+Goal-oriented sampling co-designs updates with the downstream decision under
+random delay [9], and age-of-incorrect-semantics couples usefulness with
+timeliness for video monitoring [8]. Limitation: packet loss, feedback-free
+senders and alarm deadlines are seldom validated together, which is exactly
+the combination this report stresses (Section VI-D).</p>
+""")
+place("""
+<h2>B. What Remains to Be Tested Here</h2>
 <p>The practical gap is narrow and mechanical: a sender without
 acknowledgements cannot know whether its last change-triggered packet arrived.
 A silence timer gives it later opportunities to update, but reveals nothing
